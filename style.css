@@ -9,7 +9,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topNav {
-  background-color: #000000;
+  background-color: #ffffff;
   height: 50px;
   width: 100%;
 }
@@ -28,7 +28,7 @@ body {
 
 /* Add a color to the active/current link on the navigation bar */
 .topnavlinks:focus {
-  color: #ffffff;
+  color: #000000;
   text-decoration: underline #e3122a;
 }
 
