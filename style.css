@@ -1,14 +1,13 @@
 /* Removing any borders */
 html, body {
   margin: 0;
-  overflow: hidden;
   display: flex;
+  padding: 0;
   flex-direction: column;
-  background-color: #000000;
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 /* Navigation Bar */
@@ -325,8 +324,7 @@ hr.solid {
   background-color: black;
   height: 500px;
   width: 100%;
-  bottom: 0;
-  margin-top: auto;
+  flex-shrink: 0;
 }
 
 .logoFooter {
