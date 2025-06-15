@@ -101,8 +101,4 @@ function validateForm() {
     alert("Phone number must be filled out with the format 0XXXXXXXXXX");
     return false;
   }
-  else if (formResume == "") {
-    alert("Please enter a resume");
-    return false;
-  }
 }
