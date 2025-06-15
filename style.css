@@ -2,8 +2,6 @@
 body {
   margin: 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Navigation Bar */
