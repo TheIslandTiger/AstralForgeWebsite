@@ -9,7 +9,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topNav {
-  background-color: #ffffff;
+  background-color: #000000;
   height: 50px;
   width: 100%;
 }
