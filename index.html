@@ -1,1 +1,218 @@
 <h1>Hello!</h1>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Astral Forge is a video game development company with a passion for creating immersive story-driven worlds for our players to explore and enjoy!">
+  <meta name="keywords" content="Astral Forge, Video Games, AstralForge, Games, Fates Loop, Astral Forge Games, RPG, Role Playing Games, Indie Company">
+  <meta name="author" content="Astral Forge">
+  
+  <!-- Changing the web page name depending on where the user is on the page -->
+  <title>Astral Forge - Home</title>
+
+  <!-- Adding a favicon -->
+  <link rel="icon" type="image/x-icon" href="Logos/HalfLogo.png">
+  <!-- Adding an apple touch icon -->
+  <link rel="apple-touch-icon" href="Logos/HalfLogo.png">
+
+  <!-- Adding the css style sheets -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- W3.CSS stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Jquery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+<!-- Navigation Bar -->
+<!----------------------------------------------------------------------------- -->
+
+  <!-- Dropdown for the hamburger menu -->
+  <div id="menuLinks" class="w3-top w3-center w3-bar-block w3-black w3-hide hamburgerMenu w3-animate-opacity">
+    <a href="index.html" id="currentPage" class="w3-bar-item topNavLinks">Home</a>
+    <a href="team.html" class="w3-bar-item topNavLinks">Games</a>
+    <a href="jobs.html" class="w3-bar-item topNavLinks">Teams</a>
+    <a href="contact.html" class="w3-bar-item topNavLinks">Contact</a>
+  </div>
+
+  <!-- Navigation bar -->
+  <div class="topNav w3-bar w3-top">
+    <!-- Hamburger Menu -->
+    <a href="javascript:void(0)" id="hamburgerMenu" class="w3-bar-item w3-right topNavButton"
+      onclick="myFunction()">&#9776;</a>
+    <!-- Logo -->
+    <a href="index.html w3-hide-small" class="w3-left w3-hide-small w3-hide-medium"><img id="logoNav" src="Logos/Logo.png" alt="Hot Beans Web logo and name."></a>
+    <a href="index.html w3-hide-large w3-hide-medium" class="w3-left"><img id="logoNav" style="margin-top:-47px;" src="Logos/Logo.png" alt="Hot Beans Web logo and name."></a>
+    <!-- Aligns the links to the right and hides them on a small page -->
+    <div class="w3-right w3-hide-small">
+      <!-- Home -->
+      <a id="currentPage" class="w3-bar-item topNavLinks" href="index.html">Home</a>
+      <!-- Team -->
+      <a class="w3-bar-item topNavLinks" href="team.html">Team</a>
+      <!-- Jobs -->
+      <a class="w3-bar-item topNavLinks" href="jobs.html">Jobs</a>
+      <!-- Contact -->
+      <a class="w3-bar-item topNavLinks" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+<!-- Page Content -->
+<!----------------------------------------------------------------------------- -->
+  
+  <!-- Header video -->
+  <header class="w3-display-container w3-content w3-wide pictureOutline" style="max-width:100%; padding-top:50px;">
+    <!-- Large screen video -->
+    <video class="w3-hide-small w3-hide-medium" id="HBWHomeVideoL" onclick="HomeVideoL()" width="100%" autoplay loop muted>
+      <source src="PageVideos/HBWHomeL.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Small screen video -->
+    <video class="w3-hide-large" id="HBWHomeVideoS" onclick="HomeVideoS()" width="100%" autoplay loop muted>
+      <source src="PageVideos/HBWHomeS.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </header>
+
+  <!-- Company Moto -->
+  <h3 class="w3-center" style="font-size:35px;"><b><i>Developed with passion. Designed for you. Tailored to everyone.</i></b></h3>
+
+  <div class="w3-row">
+    <!-- Side Picture -->
+    <div class="w3-col w3-container l4">
+      <!-- Placeholder -->
+      <img class="w3-image pictureOutline w3-hide-small" style="margin-top:36px; height:300px" src="PagePhotos/HomeBGLarge.jpg" alt="Lines of Code">
+    <img class="w3-image w3-hide-large w3-hide-medium pictureOutline" src="PagePhotos/HomeBGSmall.jpg" alt="Lines of Code" width="100%" height="200px">
+    </div>
+
+    <!-- About Us section header -->
+    <div class="w3-col w3-container l8">
+      <h1 class="w3-hide-small" style="font-size:30px;"><b>ABOUT US</b></h1>
+      <h2 class="w3-hide-large w3-hide-medium w3-center" style="font-size:30px;"><b>ABOUT US</b></h2>
+      <p style="font-size:20px;">With over 15 years in the industry, Hot Beans Web is an ever-growing studio located in England. Built out of a passion for web development, we have worked with clients from all over the globe to produce top quality, custom websites that are uniquely tailored to them. Our dedicated team work closely with each client in creating their personalised site so that we can find solutions that allow us to provide a complete solution maximising the experience, design, and overall use of the website. As a studio, we have one mission; to create the best websites possible. We want to give everyone the chance to have a website that allows themselves or their business to display their story and mission to global audiences without losing any of the attention to detail that make us who we are today.</p>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Quote slideshow small -->
+  <div class="quoteContainerSmall w3-hide-large">
+    <h2 class="quoteContainerTitle w3-center">QUOTES</h2>
+    <p class="item-1">“From the beginning, we received excellent advice and support setting up a new website. The team were efficient, knowledgeable, supportive and a pleasure to work with throughout the project.”</p>
+    <p class="item-2">"An extremely knowledgeable agency that work as part of your team and understand your brand, as well as being lovely to work with day in, day out.”</p>
+    <p class="item-3">“Thanks to their work as a third-party vendor, client satisfaction is up. Hot Beans Web proactive and experienced team helped anticipate issues, created a strong relationship that will likely extend to future collaborations.”</p>
+  </div>
+  <!-- Quote slideshow large -->
+  <div class="quoteContainerLarge w3-hide-small w3-hide-medium">
+    <h2 class="quoteContainerTitle w3-center">QUOTES</h2>
+    <p class="item-1">“From the beginning, we received excellent advice and support setting up a new website. The team were efficient, knowledgeable, supportive and a pleasure to work with throughout the project.”</p>
+    <p class="item-2">"An extremely knowledgeable agency that work as part of your team and understand your brand, as well as being lovely to work with day in, day out.”</p>
+    <p class="item-3">“Thanks to their work as a third-party vendor, client satisfaction is up. Hot Beans Web proactive and experienced team helped anticipate issues, created a strong relationship that will likely extend to future collaborations.”</p>
+  </div>
+
+  <br>
+
+  <!-- Section header -->
+  <h2 class="w3-center" style="font-size:30px;"><b>WELCOME TO HOT BEANS WEB,</b></h2>
+  <p class="w3-center" style="font-size:25px; margin-top:-10px;">the industry leader in creating websites to global
+    audiences for any occasion.</p>
+
+  <!-- 3 section headings -->
+  <div class="w3-container">
+    <!-- Our History Header -->
+    <div class="w3-third w3-container">
+      <h2 class="w3-center w3-hide-small"><b>OUR HISTORY</b></h2>
+      <h2 class="w3-left w3-hide-large w3-hide-medium"><b>OUR HISTORY</b></h2>
+      <!-- Correcting the layout between large and small devices -->
+      <br class="w3-hide-large"><br class="w3-hide-large">
+
+      <!-- Content description -->
+      <p style="font-size:20px;">Established in 2007, located in Essex (HQ) and London, England, Hot Beans Web was born
+        out of a raw passion for web development.</p>
+      <p style="font-size:17px;">The studio’s founders: Lauren D and Leah F, both pioneers in website development,
+        decided to employ their industry experience, and in 2007, Hot Beans Web was born.</p>
+      <!-- Read More button -->
+      <a class="w3-round readMoreButton" href="index.html">Read More</a>
+    </div>
+
+    <!-- Our Mission Header -->
+    <div class="w3-third w3-container">
+      <h2 class="w3-center w3-hide-small"><b>OUR MISSION</b></h2>
+      <h2 class="w3-left w3-hide-large w3-hide-medium"><b>OUR MISSION</b></h2>
+      <!-- Correcting the layout between large and small devices -->
+      <br class="w3-hide-large"><br class="w3-hide-large">
+
+      <!-- Content description -->
+      <p style="font-size:20px;">There is an inner fire, fuelled in every member of the studio. It comes from what we
+        surround ourselves with, from the hobbies we enjoy, from where we live, and who we are accompanied by.</p>
+      <p style="font-size:17px;">We want to hone that inner fire and make it grow. It’s what makes us and the websites
+        we create so unique. As a studio, we have one mission: making the best websites possible.</p>
+      <!-- Read More button -->
+      <a class="w3-round readMoreButton" href="index.html">Read More</a>
+    </div>
+
+    <!-- Meet the Team Header -->
+    <div class="w3-third w3-container">
+      <h2 class="w3-center w3-hide-small"><b>MEET THE TEAM</b></h2>
+      <h2 class="w3-left w3-hide-large w3-hide-medium"><b>MEET THE TEAM</b></h2>
+      <!-- Correcting the layout between large and small devices -->
+      <br class="w3-hide-large"><br class="w3-hide-large">
+
+      <!-- Content description -->
+      <p style="font-size:20px;">The studio is home to some of the industry’s best, professionals from all over the
+        globe with a shared love of web development.</p>
+      <p style="font-size:17px;">Whether it’s through the unique atmosphere of the work environment we create or the
+        fresh approach to the projects we’re involved in, Hot Beans Web is a place that escapes the corporate-style
+        website development.</p>
+      <!-- Read More button -->
+      <a class="w3-round readMoreButton" href="team.html">Read More</a>
+    </div>
+  </div>
+
+  <br>
+
+<!-- Footer -->
+<!----------------------------------------------------------------------------- -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Making space for a logo -->
+    <div class="w3-col w3-container w3-third"></div>
+    <div class="w3-col w3-container w3-third w3-center">
+      <!-- Logo -->
+      <a href="index.html"><img class="logoFooter" src="Logos/Logo.png" alt="Hot Beans Web logo and name."></a>
+    </div>
+    <div class="w3-col w3-container w3-third" style="height:70px;"></div>
+
+    <!-- Adding the rest of the footer details -->
+    <div class="w3-col w3-container w3-third">
+      <!-- Contact -->
+      <h2 class="w3-center headingFooter"><b>CONTACT</b></h2>
+      <a href="contact.html"><p class="w3-center" style="color:white; font-size:20px;">Make an inquiry</p></a>
+    </div>
+    
+    <div class="w3-col w3-container w3-third w3-center">
+      <!-- Social -->
+      <h2 class="headingFooter"><b>SOCIAL</b></h2>
+      <!-- Large screens -->
+      <a class="w3-hide-small" href="https://beacons.ai/HotBeansWeb" target="_blank"><img class="socialFooterLarge" src="PagePhotos/FooterSocial.png" alt="Links to social media pages."></a>
+      <!-- Small/medium screens -->
+      <a class="w3-hide-large w3-hide-medium" href="https://beacons.ai/HotBeansWeb" target="_blank"><img class="socialFooterSmall" src="PagePhotos/FooterSocial.png" alt="Links to social media pages."></a>
+    </div>
+    
+    <div class="w3-col w3-container w3-third">
+      <!-- Legal -->
+      <h2 class="w3-center headingFooter"><b>LEGAL</b></h2>
+      <p class="w3-center" style="color:white; font-size:20px;">Privacy | Cookies</p>
+    </div>
+
+    <p style="padding-top:250px; color:#cdcdcd; font-size:15px;">© 2022 Hot Beans Web. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
