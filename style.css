@@ -4,7 +4,7 @@ html, body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color:red;
+  background-color: #000000;
 }
 
 main {
