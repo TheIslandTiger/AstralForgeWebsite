@@ -42,11 +42,12 @@ body {
   margin: 6px;
   align: center;
 }
-#logoNav {
+
+.logoNav {
   margin-top: 0.5%;
   margin-left: 0.5%;
-  max-height: 20%;
-  max-width: 20%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Ensuring that whatever page the user is on, is always underlined in the navigation bar */
