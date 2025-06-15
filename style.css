@@ -51,7 +51,7 @@ body {
 
 /* Ensuring that whatever page the user is on, is always underlined in the navigation bar */
 #currentPage {
-  color: #ffffff;
+  color: #000000;
   text-decoration: underline #c7a6cf;
 }
 
