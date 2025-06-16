@@ -199,10 +199,12 @@ q {font-style: italic;}
 }
 
 .highlight-box {
-  background-color: #c7a6cf; /* or any color you like */
-  padding: 100px;
-  border-radius: 1px;
-  margin-bottom: 5px;
+  	background-color: #c7a6cf; /* or any color you like */
+  	padding: 100px;
+  	border-radius: 1px;
+ 	margin-bottom: 5px;
+	max-width: 250px;        /* responsive max width */
+  	margin: 0 auto;
 }
 
 /* Jobs */
