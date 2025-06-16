@@ -116,8 +116,13 @@ main {
 	height: 50px;
 }
 
+.qLinks {
+	color: #ffffff;
+}
+
 .qLinks:hover {
 	color: #c7a6cf;
+	text-decoration: underline #c7a6cf;
 }
 
 /* Specifying the animation */
