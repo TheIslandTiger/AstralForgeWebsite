@@ -35,7 +35,7 @@ main {
 /* Add a color to the active/current link on the navigation bar */
 .topnavlinks:focus {
   color: #000000;
-  text-decoration: underline #c7a6cf;
+  text-decoration: underline #573d90;
 }
 
 /* Change the color of links on hover */
