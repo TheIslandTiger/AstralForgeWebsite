@@ -179,8 +179,9 @@ q {font-style: italic;}
 /* -------------------------------------------------------------------------------------------------------- */
 
 .teamPlace {
-  height: 570px w3-hide-small;
-  background-color: #c7a6cf;
+  	height: 400px;
+	width: 80%;
+	background-color: #c7a6cf;
 }
 
 .teamImage {
