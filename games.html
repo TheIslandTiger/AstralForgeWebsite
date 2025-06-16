@@ -1,1 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Astral Forge is a video game development company with a passion for creating immersive story-driven worlds for our players to explore and enjoy!">
+  <meta name="keywords" content="Astral Forge, Video Games, AstralForge, Games, Fates Loop, Astral Forge Games, RPG, Role Playing Games, Indie Company">
+  <meta name="author" content="Astral Forge">
+  
+  <!-- Changing the web page name depending on where the user is on the page -->
+  <title>Astral Forge - Games</title>
 
+  <!-- Adding a favicon -->
+  <link rel="icon" href="Images/Favicon.png">
+  <!-- Adding an apple touch icon -->
+  <link rel="apple-touch-icon" href="Images/AstralForge_LightVertical.svg">
+
+  <!-- Adding the css style sheets -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- W3.CSS stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Jquery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <main>
+
+<!-- Navigation Bar -->
+<!----------------------------------------------------------------------------- -->
+
+  <!-- Dropdown for the hamburger menu -->
+  <div id="menuLinks" class="w3-top w3-center w3-bar-block w3-hide hamburgerMenu w3-animate-opacity" style="background-color:f3eaf5;">
+    <a href="index.html" class="w3-bar-item topNavLinks">Home</a>
+    <a href="games.html" id="currentPage" class="w3-bar-item topNavLinks">Games</a>
+    <a href="team.html" class="w3-bar-item topNavLinks">Teams</a>
+    <a href="contact.html" class="w3-bar-item topNavLinks">Contact</a>
+  </div>
+
+  <!-- Navigation bar -->
+  <div class="topNav w3-bar w3-top">
+    <!-- Hamburger Menu -->
+    <a href="javascript:void(0)" id="hamburgerMenu" class="w3-bar-item w3-right topNavButton" style="padding-top:20px;"
+      onclick="myFunction()">&#9776;</a>
+    <!-- Logo -->
+    <a href="index.html"><img class="logoNav w3-left w3-hide-small w3-hide-medium" src="Images/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
+    <a href="index.html"><img class="w3-center w3-hide-large logoNav" style="height:100px;" src="Images/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
+    <!-- Aligns the links to the right and hides them on a small page -->
+    <div class="w3-right w3-hide-small" style="padding-top:15px;">
+      <!-- Home -->
+      <a class="w3-bar-item topNavLinks" href="index.html">Home</a>
+      <!-- Team -->
+      <a id="currentPage" class="w3-bar-item topNavLinks" href="games.html">Games</a>
+      <!-- Jobs -->
+      <a class="w3-bar-item topNavLinks" href="team.html">Team</a>
+      <!-- Contact -->
+      <a class="w3-bar-item topNavLinks" href="contact.html">Contact</a>
+    </div>
+  </div>
+
+<!-- Page Content -->
+<!----------------------------------------------------------------------------- -->
