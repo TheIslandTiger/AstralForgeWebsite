@@ -116,6 +116,10 @@ main {
 	height: 50px;
 }
 
+.qLinks:hover {
+	color: #c7a6cf;
+}
+
 /* Specifying the animation */
 .item-1{
 	animation-name: anim-1;
