@@ -200,10 +200,9 @@ q {font-style: italic;}
 
 .highlight-box {
   background-color: #c7a6cf; /* or any color you like */
-  padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  padding: 30px;
+  border-radius: 1px;
+  margin-bottom: 5px;
 }
 
 /* Jobs */
