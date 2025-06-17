@@ -200,9 +200,9 @@ q {font-style: italic;}
 
 .highlight-box {
   	background-color: #c7a6cf; /* or any color you like */
-  	border-radius: 1px;
+  	border-radius: 5px;
  	margin-bottom: 5px;
-	max-width: 250px;        /* responsive max width */
+	max-width: 300px;        /* responsive max width */
   	margin: 0 auto;
 }
 
