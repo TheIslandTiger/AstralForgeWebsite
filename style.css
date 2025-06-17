@@ -210,6 +210,14 @@ q {font-style: italic;}
   	margin: 0 auto;
 }
 
+.highlight-box2 {
+  	background-color: #f3eaf5; /* or any color you like */
+  	border-radius: 5px;
+ 	margin-bottom: 5px;
+	max-width: 310px;        /* responsive max width */
+  	margin: 0 auto;
+}
+
 .contactLinks:hover {
 	color: #c7a6cf;
 	text-decoration: underline #c7a6cf;
