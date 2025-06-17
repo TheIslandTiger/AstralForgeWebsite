@@ -10,6 +10,11 @@ main {
   flex: 1 0 auto;
 }
 
+h1 {
+  font-family: "arsenica-variable",sans-serif;
+  font-variation-settings: 'wght' 400, 'opsz' 100;
+}
+
 /* Navigation Bar */
 /* -------------------------------------------------------------------------------------------------------- */
 
