@@ -204,6 +204,12 @@ q {font-style: italic;}
   	margin: 0 auto;
 }
 
+.contactLinks:hover {
+	color: #c7a6cf;
+	text-decoration: underline #c7a6cf;
+}
+
+
 /* Jobs */
 /* -------------------------------------------------------------------------------------------------------- */
 
