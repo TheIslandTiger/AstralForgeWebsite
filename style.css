@@ -13,7 +13,7 @@ main {
 h1, h2 {
   	font-family: arsenica-variable, sans-serif;
 	font-style: normal;
-	font-variation-settings: "opsz" 100, "wght" 400;
+	font-variation-settings: "opsz" 500, "wght" 600;
 }
 
 /* Navigation Bar */
