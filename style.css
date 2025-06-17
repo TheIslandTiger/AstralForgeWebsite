@@ -204,6 +204,8 @@ q {font-style: italic;}
  	margin-bottom: 5px;
 	max-width: 300px;        /* responsive max width */
   	margin: 0 auto;
+	padding-left:5px;
+	padding-right:5px;
 }
 
 /* Jobs */
