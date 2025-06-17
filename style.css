@@ -200,7 +200,7 @@ q {font-style: italic;}
 
 .highlight-box {
   	background-color: #c7a6cf; /* or any color you like */
-  	padding: 100px;
+  	padding: 300px;
   	border-radius: 1px;
  	margin-bottom: 5px;
 	max-width: 250px;        /* responsive max width */
