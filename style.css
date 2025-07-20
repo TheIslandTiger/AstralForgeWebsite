@@ -12,7 +12,7 @@ main {
 }
 
 h1, h2 {
-	font-family: arsenica-variable, sans-serif;
+	font-family: "arsenica variable", sans-serif;
 	font-variation-settings: "opsz" 100, "wght" 400;
 	font-color: red;
 }
