@@ -12,9 +12,8 @@ main {
 }
 
 h1, h2 {
-	font-family: "arsenica variable", sans-serif;
-	font-variation-settings: "opsz" 100, "wght" 400;
-	font-color: red;
+	font-family: "arsenica variable", serif !important;
+	font-variation-settings: "wght" 400 !important;
 }
 
 /* Navigation Bar */
