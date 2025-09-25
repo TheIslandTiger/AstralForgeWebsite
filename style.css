@@ -16,6 +16,11 @@ h1, h2 {
 	font-variation-settings: "wght" 500 !important;
 }
 
+h3 {
+	font-family: "arsenica variable", serif !important;
+	font-variation-settings: "wght" 300 !important;
+}
+
 /* Navigation Bar */
 /* -------------------------------------------------------------------------------------------------------- */
 
