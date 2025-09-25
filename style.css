@@ -213,7 +213,7 @@ q {font-style: italic;}
   	background-color: #c7a6cf; /* or any color you like */
   	border-radius: 5px;
  	margin-bottom: 5px;
-	max-width: 310px;        /* responsive max width */
+	max-width: 300px;        /* responsive max width */
   	margin: 0 auto;
 }
 
