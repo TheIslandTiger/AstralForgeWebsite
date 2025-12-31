@@ -191,8 +191,9 @@ q {font-style: italic;}
 .eventSquare{
   border-radius: 15px; /* one value */
   background: #292929;
-  width: 200px;
+  max-width: 200px;
   height: 150px;
+  margin: 0 auto;
 }
 
 /* Team */
