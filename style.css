@@ -188,6 +188,13 @@ q {font-style: italic;}
   border: 3px solid #c7a6cf;
 }
 
+.eventSquare{
+  border-radius: 15px; /* one value */
+  background: #292929;
+  width: 200px;
+  height: 150px;
+}
+
 /* Team */
 /* -------------------------------------------------------------------------------------------------------- */
 
