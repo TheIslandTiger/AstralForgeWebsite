@@ -196,6 +196,13 @@ q {font-style: italic;}
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
+  overflow: hidden;
+}
+
+.eventSquareImage{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Team */
