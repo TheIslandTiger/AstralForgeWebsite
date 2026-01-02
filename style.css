@@ -193,6 +193,8 @@ q {font-style: italic;}
   background: #292929;
   height: 150px;
   margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Team */
