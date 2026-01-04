@@ -410,6 +410,19 @@ hr.solid {
 
 /* Games */
 /* -------------------------------------------------------------------------------------------------------- */
+.twoColumnLayout {
+  display: grid;
+  grid-template-columns: 13% 35% 2% 2% 35% 13%;
+}
+
+.twoColumnLayout .left {
+  grid-column: 2;
+}
+
+.twoColumnLayout .right {
+  grid-column: 5;
+}
+
 .videoWrapper {
   width: 100%;
   aspect-ratio: 16 / 9;
