@@ -210,6 +210,17 @@ q {font-style: italic;}
   display: block;
 }
 
+.eventSquareSmall{
+  color: white;
+  border-radius: 15px; /* one value */
+  background: #424242;
+  margin: 0 auto;
+  padding: 5px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 /* Team */
 /* -------------------------------------------------------------------------------------------------------- */
 
