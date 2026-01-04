@@ -217,8 +217,6 @@ q {font-style: italic;}
   margin: 0 auto;
   padding: 5px;
   overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
 /* Team */
