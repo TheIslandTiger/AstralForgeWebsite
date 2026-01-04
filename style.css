@@ -198,8 +198,8 @@ q {font-style: italic;}
   padding-right: 5px;
   padding-bottom: 10px;
   overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .eventSquareImage{
