@@ -56,14 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (n < 1) { slideIndex = slidesEvent.length }
 
     for (i = 0; i < slidesEvent.length; i++) {
-      slidesEvent[i].style.display = "none";
+      //slidesEvent[i].style.display = "none";
+	  slidesEvent[i].classList.remove("active");
     }
 
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    slidesEvent[slideIndex - 1].style.display = "flex";
+    //slidesEvent[slideIndex - 1].style.display = "block";
+	slidesEvent[slideIndex - 1].classList.add("active");
     dots[slideIndex - 1].className += " active";
   }
 })
