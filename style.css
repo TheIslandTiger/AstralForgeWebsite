@@ -22,7 +22,7 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .eventSquare {
+  .w3-row-padding > .w3-col {
     margin-bottom: 16px;
   }
 }
