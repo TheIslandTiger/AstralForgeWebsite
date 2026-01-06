@@ -239,8 +239,19 @@ q {font-style: italic;}
 }
 
 /* Hide the images by default */
-.mySlides {
+/*.mySlides {
   display: none;
+}*/
+
+.mySlides {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.mySlides.active {
+  visibility: visible;
+  position: relative;
 }
 
 /* Next & previous buttons */
