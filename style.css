@@ -21,6 +21,12 @@ h3 {
 	font-variation-settings: "wght" 400 !important;
 }
 
+@media (max-width: 600px) {
+  .eventSquare {
+    margin-bottom: 16px;
+  }
+}
+
 /* Navigation Bar */
 /* -------------------------------------------------------------------------------------------------------- */
 
