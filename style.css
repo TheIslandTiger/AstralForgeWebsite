@@ -1,10 +1,13 @@
 /* Removing any borders */
 html, body {
   	margin: 0;
-  	display: flex;
   	padding: 0;
-  	flex-direction: column;
 	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
 }
 
 main {
