@@ -8,6 +8,7 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
+	outline: 10px solid red !important;
 }
 
 main {
