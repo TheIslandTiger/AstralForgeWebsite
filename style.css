@@ -350,6 +350,27 @@ q {font-style: italic;}
 	text-decoration: underline #c7a6cf;
 }
 
+.fourColumnLayout {
+  display: grid;
+  grid-template-columns: 6% 16% 8% 16% 8% 16% 8% 16% 6%;
+}
+
+.fourColumnLayout .one {
+  grid-column: 2;
+}
+
+.fourColumnLayout .two {
+  grid-column: 4;
+}
+
+.fourColumnLayout .three {
+  grid-column: 6;
+}
+
+.fourColumnLayout .four {
+  grid-column: 8;
+}
+
 
 /* Jobs */
 /* -------------------------------------------------------------------------------------------------------- */
