@@ -34,8 +34,13 @@ function initSlideShow(slideshow) {
 	}, time);
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
+  let slidesEvent = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  // Exit if no slideshow exists on this page
+  if (!slidesEvent.length) return;
+
   let slideIndex = 1;
   showSlides(slideIndex);
 
@@ -49,15 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showSlides(n) {
     let i;
-    let slidesEvent = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
 
     if (n > slidesEvent.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slidesEvent.length }
 
     for (i = 0; i < slidesEvent.length; i++) {
       slidesEvent[i].style.display = "none";
-    }
+	}
 
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
@@ -67,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dots[slideIndex - 1].className += " active";
   }
 })
+
 
 // Jobs dropdowns
 // When the user clicks on the button, toggle between hiding and showing the dropdown content 
