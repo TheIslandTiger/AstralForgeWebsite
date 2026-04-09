@@ -71,13 +71,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 })
 
-
-// Jobs dropdowns
-// When the user clicks on the button, toggle between hiding and showing the dropdown content 
-function jobTeamFilter() {  
-  document.getElementById("jobTeamDropdown").classList.toggle("jobTeamShow");
-}
-
-function jobLocationFilter() {  
-  document.getElementById("jobLocationDropdown").classList.toggle("jobLocationShow");
-}
