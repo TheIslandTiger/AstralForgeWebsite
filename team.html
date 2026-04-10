@@ -1,318 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Astral Forge is a video game development company with a passion for creating immersive story-driven worlds for our players to explore and enjoy!">
-  <meta name="keywords" content="Astral Forge, Video Games, AstralForge, Games, Fates Loop, Astral Forge Games, RPG, Role Playing Games, Indie Company">
-  <meta name="author" content="Astral Forge">
-  
-  <!-- Changing the web page name depending on where the user is on the page -->
-  <title>Astral Forge - Team</title>
-
-  <!-- Adding a favicon -->
-  <link rel="icon" href="Images/Logo/Favicon.png">
-  <!-- Adding an apple touch icon -->
-  <link rel="apple-touch-icon" href="Images/Logo/Favicon.png">
-
-  <!-- W3.CSS stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- Jquery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Adding the css style sheets -->
-  <link href="style.css" rel="stylesheet" type="text/css">
-
-  <!-- Font -->
-  <link rel="stylesheet" href="https://use.typekit.net/tvy5vdd.css">
-
-</head>
-
-<body>
-  <script src="script.js"></script>
-  <main>
-
-<!-- Navigation Bar -->
-<!----------------------------------------------------------------------------- -->
-
-  <!-- Dropdown for the hamburger menu -->
-  <div id="menuLinks" class="w3-top w3-center w3-bar-block w3-hide hamburgerMenu w3-animate-opacity" style="background-color:f3eaf5;">
-    <a href="index.html" class="w3-bar-item topNavLinks">Home</a>
-    <a href="games.html" class="w3-bar-item topNavLinks">Games</a>
-    <a href="team.html" id="currentPage" class="w3-bar-item topNavLinks">Teams</a>
-    <a href="contact.html" class="w3-bar-item topNavLinks">Contact</a>
-  </div>
-
-  <!-- Navigation bar -->
-  <div class="topNav w3-bar w3-top">
-    <!-- Hamburger Menu -->
-    <a href="javascript:void(0)" id="hamburgerMenu" class="w3-bar-item w3-right topNavButton" style="padding-top:20px;"
-      onclick="myFunction()">&#9776;</a>
-    <!-- Logo -->
-    <a href="index.html"><img class="logoNav w3-left w3-hide-small w3-hide-medium" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-    <a href="index.html"><img class="w3-center w3-hide-large logoNav" style="height:100px;" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-    <!-- Aligns the links to the right and hides them on a small page -->
-    <div class="w3-right w3-hide-small" style="padding-top:15px;">
-      <!-- Home -->
-      <a class="w3-bar-item topNavLinks" href="index.html">Home</a>
-      <!-- Team -->
-      <a class="w3-bar-item topNavLinks" href="games.html">Games</a>
-      <!-- Jobs -->
-      <a id="currentPage" class="w3-bar-item topNavLinks" href="team.html">Team</a>
-      <!-- Contact -->
-      <a class="w3-bar-item topNavLinks" href="contact.html">Contact</a>
-    </div>
-  </div>
+---
+layout: page
+---
 
 <!-- Page Content -->
 <!----------------------------------------------------------------------------- -->
 
-    <!-- Page title -->
-    <h1 class="w3-center" style="padding-top:80px;"><b>OUR TEAM</b></h1>
+<!-- Page title -->
+<h1 class="w3-center" style="padding-top:80px;"><b>OUR TEAM</b></h1>
 
-     <!-- Team Photos -->
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Abby.JPG" alt="Abbygale Dunn"></div>
-          <h2 class="w3-center"><b>Abbygale Dunn</b></h2>
-          <h4 class="w3-center">Director, Programmer, Designer</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> As the founder and director of Astral Forge, Abbygale focuses on building the company and business whilst also being a programmer and designer on our games.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "When I was a child I felt most at home and like myself when I was playing video games and I want to give that experience to the world. That is what Astral Forge is about."</p>
-          <p class="w3-center"><b>Favourite Game -</b> The Witcher: Enhanched Edition</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/abbygaledunn/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="w3-col w3-container w3-third teamPlace">
-        <div class="w3-center w3-hide-small"><img src="Images/ProtoPlayTeam.JPG" alt="The Team" style="max-height:100%; max-width:100%;"></div>
-      </div>
-      
-      <div class="w3-col w3-container w3-third teamPlace">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Mary.jpg" alt="Mary-Jane Law"></div>
-          <h2 class="w3-center"><b>Mary-Jane Law</b></h2>
-          <h4 class="w3-center">Programmer, Game Designer</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Mary-Jane is a designer and programmer for Astral Forge, she creates the games as you know it. The world and feel of the game is due to her imagination and talent.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "I'm driven by my passion for storytelling and exploring the psychology behind it. I want to make people connect with my projects on a deeper level."</p>
-          <p class="w3-center"><b>Favourite Game -</b> Darkest dungeon II</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/maryjanelaw/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
+  <!-- Team Photos -->
+<div class="w3-row">
+  <div class="w3-col w3-container w3-third">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Abby.jpg" alt="Abbygale Dunn"></div>
+      <h2 class="w3-center"><b>Abbygale Dunn</b></h2>
+      <h4 class="w3-center">Director, Programmer, Designer</h4>
+    </div>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> As the founder and director of Astral Forge, Abbygale focuses on building the company and business whilst also being a programmer and designer on our games.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "When I was a child I felt most at home and like myself when I was playing video games and I want to give that experience to the world. That is what Astral Forge is about."</p>
+      <p class="w3-center"><b>Favourite Game -</b> The Witcher: Enhanched Edition</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/abbygaledunn/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
       </div>
     </div>
-
-    <!-- NEW ROW -->
-
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Tommy.jpg" alt="Tommy Doherty"></div>
-          <h2 class="w3-center"><b>Tommy Doherty</b></h2>
-          <h4 class="w3-center">3D Environment Artist, Designer</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Tommy is the 3D artist for Astral Forge. His world is what you experience and explore in our games and each small set dressing is his expert creation.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "I have always been fascinated by the large open world games that use the environment to tell a story. I want to make games so that I can create those kind of worlds. A game world that feels alive."</p>
-          <p class="w3-center"><b>Favourite Game -</b> Mordhau</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/tommy-doherty-72543632b/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-col w3-container w3-third teamPlace">
-        <div class="w3-center w3-hide-small"><img src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo"></div>
-      </div>
-      
-      <div class="w3-col w3-container w3-third teamPlace">
-         <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Joe.jpg" alt="Joseph Jefferies"></div>
-          <h2 class="w3-center"><b>Joseph Jefferies</b></h2>
-          <h4 class="w3-center">Animator, Technical Designer</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Joe is our technical animator in Astral Forge. He works on the interactions and movement for our characters and makes the world feel alive.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "I love the technical side of games, figuring out how a game can be put together to provide an experience that can be unique to each player that plays it. 
-            I want to be able to provide that same feeling to others after experiencing it so many times myself."</p>
-          <p class="w3-center"><b>Favourite Game -</b> Hearts of Iron IV</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/josephj2004/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
+  </div>
+  
+  <div class="w3-col w3-container w3-third teamPlace">
+    <div class="w3-center w3-hide-small"><img src="images/ProtoPlayTeam.jpg" alt="The Team" style="max-height:100%; max-width:100%;"></div>
+  </div>
+  
+  <div class="w3-col w3-container w3-third teamPlace">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Mary.jpg" alt="Mary-Jane Law"></div>
+      <h2 class="w3-center"><b>Mary-Jane Law</b></h2>
+      <h4 class="w3-center">Programmer, Game Designer</h4>
+    </div>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Mary-Jane is a designer and programmer for Astral Forge, she creates the games as you know it. The world and feel of the game is due to her imagination and talent.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "I'm driven by my passion for storytelling and exploring the psychology behind it. I want to make people connect with my projects on a deeper level."</p>
+      <p class="w3-center"><b>Favourite Game -</b> Darkest dungeon II</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/maryjanelaw/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- NEW ROW -->
-    <div class="w3-hide-small row-gap"></div>
-      
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Antony.jpg" alt="Antony Garbett"></div>
-          <h2 class="w3-center"><b>Antony Garbett</b></h2>
-          <h4 class="w3-center">Character Artist</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Antony is our character artist, he makes all of the people and creatures you meet and gives them life and personality.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "I want to create characters that people identify with and feel deeply about. I want my art and visual storytelling to help inspire and instill that same sense of wonder that games have always given me."</p>
-          <p class="w3-center"><b>Favourite Game -</b> God of War 3</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://uk.linkedin.com/in/antony-garbett-b24671279" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-            <a class="teamFollowLink" href="https://www.artstation.com/antonygarbett9" target="_blank">
-              <img class="socialLink" src="Images/Software/Artstation.svg" alt="Artstation Logo">
-            </a>
-          </div>
-        </div>
-      </div>
-        
-      <div class="w3-col w3-container w3-third teamPlace">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Ciara.jpg" alt="Ciara Doherty"></div>
-          <h2 class="w3-center"><b>Ciara Doherty</b></h2>
-          <h4 class="w3-center">Concept Artist</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Ciara is our concept artist, she designs everything big and small. Her visions are what you see, explore, and interact with throughout.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "Video games are an extraordinary way for an artists work to come alive. I want to show how the creativity and passion I have for gaming is reflected in my work."</p>
-          <p class="w3-center"><b>Favourite Game -</b> Baldur's Gate 3</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/ciara-doherty-832491231/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
-      </div>
+<!-- NEW ROW -->
 
-      <div class="w3-col w3-container w3-third teamPlace">
-        <div class="highlight-box w3-left">
-          <div class="w3-center"><img class="teamImage" src="Images/Team/Owen.jpg" alt="Owen Stocking"></div>
-          <h2 class="w3-center"><b>Owen Stocking</b></h2>
-          <h4 class="w3-center">VFX Artist, Technical Artist</h4>
-        </div>
-        <div class="highlight-box2 w3-right">
-          <p class="w3-center"><b>Role -</b> Owen is our technical artist specialising in VFX. He adds the magic to the worlds and makes sure you feel each movement.</p>
-          <p class="w3-center"><b>Why I Make Games -</b> "I grew up playing games and I’ve always been a film and TV fanatic. Those stories shaped my life and made me want to be part of that world. Working in the games industry offers that creative freedom, strong storytelling and narrative depth that I love"</p>
-          <p class="w3-center"><b>Favourite Game -</b> God of War Ragnarök</p>
-          <div style="display:flex; justify-content:center; align-items:center;">
-            <a class="teamFollowLink" href="https://www.linkedin.com/in/owen-stocking-8217531b8/" target="_blank">
-              <span class="teamFollow">Follow on:</span>
-              <img class="socialLink" src="Images/Software/LinkedInLogo.png" alt="LinkedIn logo">
-            </a>
-          </div>
-        </div>
+<div class="w3-row">
+  <div class="w3-col w3-container w3-third">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Tommy.jpg" alt="Tommy Doherty"></div>
+      <h2 class="w3-center"><b>Tommy Doherty</b></h2>
+      <h4 class="w3-center">3D Environment Artist, Designer</h4>
+    </div>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Tommy is the 3D artist for Astral Forge. His world is what you experience and explore in our games and each small set dressing is his expert creation.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "I have always been fascinated by the large open world games that use the environment to tell a story. I want to make games so that I can create those kind of worlds. A game world that feels alive."</p>
+      <p class="w3-center"><b>Favourite Game -</b> Mordhau</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/tommy-doherty-72543632b/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
       </div>
     </div>
+  </div>
 
-    <br>
+  <div class="w3-col w3-container w3-third teamPlace">
+    <div class="w3-center w3-hide-small"><img src="images/logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo"></div>
+  </div>
+  
+  <div class="w3-col w3-container w3-third teamPlace">
+      <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Joe.jpg" alt="Joseph Jefferies"></div>
+      <h2 class="w3-center"><b>Joseph Jefferies</b></h2>
+      <h4 class="w3-center">Animator, Technical Designer</h4>
+    </div>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Joe is our technical animator in Astral Forge. He works on the interactions and movement for our characters and makes the world feel alive.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "I love the technical side of games, figuring out how a game can be put together to provide an experience that can be unique to each player that plays it. 
+        I want to be able to provide that same feeling to others after experiencing it so many times myself."</p>
+      <p class="w3-center"><b>Favourite Game -</b> Hearts of Iron IV</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/josephj2004/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEW ROW -->
+<div class="w3-hide-small row-gap"></div>
+  
+<div class="w3-row">
+  <div class="w3-col w3-container w3-third">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Antony.jpg" alt="Antony Garbett"></div>
+      <h2 class="w3-center"><b>Antony Garbett</b></h2>
+      <h4 class="w3-center">Character Artist</h4>
+    </div>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Antony is our character artist, he makes all of the people and creatures you meet and gives them life and personality.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "I want to create characters that people identify with and feel deeply about. I want my art and visual storytelling to help inspire and instill that same sense of wonder that games have always given me."</p>
+      <p class="w3-center"><b>Favourite Game -</b> God of War 3</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://uk.linkedin.com/in/antony-garbett-b24671279" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
+        <a class="teamFollowLink" href="https://www.artstation.com/antonygarbett9" target="_blank">
+          <img class="socialLink" src="images/software/Artstation.svg" alt="Artstation Logo">
+        </a>
+      </div>
+    </div>
+  </div>
     
-    </main>
-
-<!-- Footer -->
-<!----------------------------------------------------------------------------- -->
-
-  <!-- Footer -->
-  <footer class="footerLarge w3-hide-small" style="display:block;"> 
-    <!-- Making space for a logo -->
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third"></div>
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Logo -->
-        <a href="index.html"><img class="logoFooter" src="Images/Logo/AstralForge_LightHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-      </div>
-      <div class="w3-col w3-container w3-third"></div>
+  <div class="w3-col w3-container w3-third teamPlace">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Ciara.jpg" alt="Ciara Doherty"></div>
+      <h2 class="w3-center"><b>Ciara Doherty</b></h2>
+      <h4 class="w3-center">Concept Artist</h4>
     </div>
-
-    <div class="w3-row">
-      <!-- Adding the rest of the footer details -->
-      <div class="w3-col w3-container w3-third">
-        <!-- Contact -->
-        <h2 class="w3-center headingFooter"><b>CONTACT</b></h2>
-        <a href="contact.html"><p class="w3-center" style="color:white; font-size:20px;">Make an inquiry</p></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Social -->
-        <h2 class="headingFooter"><b>SOCIALS</b></h2>
-        <!-- Large screens -->
-        <a href="https://www.instagram.com/astralforgeofficial/" target="_blank"><img class="socialFooterLarge" src="Images/Software/InstagramLogo.png" alt="Link to Instagram."></a>
-        <a href="https://bsky.app/profile/astral-forge.bsky.social" target="_blank" style="padding-left:5px; padding-right:5px;"><img class="socialFooterLarge" src="Images/Software/Bluesky Logo.png" alt="Link to BlueSky."></a>
-        <a href="https://www.tiktok.com/@astralforgeofficial" target="_blank"><img class="socialFooterLarge" src="Images/Software/TikTokLogo.png" alt="Link to TikTok."></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third">
-        <!-- Legal -->
-        <h2 class="w3-center headingFooter"><b>LEGAL</b></h2>
-        <p class="w3-center" style="color:white; font-size:20px;">Coming Soon</p>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Ciara is our concept artist, she designs everything big and small. Her visions are what you see, explore, and interact with throughout.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "Video games are an extraordinary way for an artists work to come alive. I want to show how the creativity and passion I have for gaming is reflected in my work."</p>
+      <p class="w3-center"><b>Favourite Game -</b> Baldur's Gate 3</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/ciara-doherty-832491231/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
       </div>
     </div>
+  </div>
 
-    <p style="padding-left:10px; color:#cdcdcd; font-size:15px;">© 2025 Astral Forge. All rights reserved.</p>
-  </footer>
-
-  <!-- Footer -->
-  <footer class="footerSmall w3-hide-large w3-hide-medium" style="display:block;"> 
-    <!-- Making space for a logo -->
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third"></div>
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Logo -->
-        <a href="index.html"><img class="logoFooter" src="Images/Logo/AstralForge_LightHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-      </div>
-      <div class="w3-col w3-container w3-third"></div>
+  <div class="w3-col w3-container w3-third teamPlace">
+    <div class="highlight-box w3-left">
+      <div class="w3-center"><img class="teamImage" src="images/team/Owen.jpg" alt="Owen Stocking"></div>
+      <h2 class="w3-center"><b>Owen Stocking</b></h2>
+      <h4 class="w3-center">VFX Artist, Technical Artist</h4>
     </div>
-
-    <div class="w3-row">
-      <!-- Adding the rest of the footer details -->
-      <div class="w3-col w3-container w3-third">
-        <!-- Contact -->
-        <h2 class="w3-center headingFooter"><b>CONTACT</b></h2>
-        <a href="contact.html"><p class="w3-center" style="color:white; font-size:20px;">Make an inquiry</p></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Social -->
-        <h2 class="headingFooter"><b>SOCIALS</b></h2>
-        <!-- Large screens -->
-        <a href="https://www.instagram.com/astralforgeofficial/" target="_blank"><img class="socialFooterLarge" src="Images/Software/InstagramLogo.png" alt="Link to Instagram."></a>
-        <a href="https://bsky.app/profile/astral-forge.bsky.social" target="_blank" style="padding:5px;"><img class="socialFooterLarge" src="Images/Software/Bluesky Logo.png" alt="Link to BlueSky."></a>
-        <a href="https://www.tiktok.com/@astralforgeofficial" target="_blank"><img class="socialFooterLarge" src="Images/Software/TikTokLogo.png" alt="Link to TikTok."></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third">
-        <!-- Legal -->
-        <h2 class="w3-center headingFooter"><b>LEGAL</b></h2>
-        <p class="w3-center" style="color:white; font-size:20px;">Coming Soon</p>
+    <div class="highlight-box2 w3-right">
+      <p class="w3-center"><b>Role -</b> Owen is our technical artist specialising in VFX. He adds the magic to the worlds and makes sure you feel each movement.</p>
+      <p class="w3-center"><b>Why I Make Games -</b> "I grew up playing games and I’ve always been a film and TV fanatic. Those stories shaped my life and made me want to be part of that world. Working in the games industry offers that creative freedom, strong storytelling and narrative depth that I love"</p>
+      <p class="w3-center"><b>Favourite Game -</b> God of War Ragnarök</p>
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <a class="teamFollowLink" href="https://www.linkedin.com/in/owen-stocking-8217531b8/" target="_blank">
+          <span class="teamFollow">Follow on:</span>
+          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+        </a>
       </div>
     </div>
+  </div>
+</div>
 
-    <p class="w3-center" style="padding-left:10px; color:#cdcdcd; font-size:15px;">© 2025 Astral Forge. All rights reserved.</p>
-  </footer>
-
-</body>
-
-</html>
+<br>

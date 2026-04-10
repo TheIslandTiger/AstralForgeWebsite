@@ -11,16 +11,14 @@ function myFunction() {
   }
 }
 
-
 // Creating the quote slide show
-var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+let slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
 
 function initSlideShow(slideshow) {
+	let slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
 
-	var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-
-	var index = 0, time = 5000;
+	let index = 0, time = 5000;
 	slides[index].classList.add('active');
 
 	setInterval( () => {

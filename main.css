@@ -425,9 +425,10 @@ q {font-style: italic;}
 
 .footerSmall {
   background-color: black;
-  height: 600px;
+  height: 400px;
   width: 100%;
   flex-shrink: 0;
+  display: block;
 }
 
 .logoFooter {
