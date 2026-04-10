@@ -1,0 +1,6 @@
+title: astralforge
+description: The University of Birmingham's premier hackathon
+url: astralforge.co.uk
+
+include: ["_redirects"]
+keep_files: ["_redirects"]
