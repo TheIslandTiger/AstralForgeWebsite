@@ -1,28 +1,46 @@
-<!-- Dropdown for the hamburger menu -->
-<div id="menuLinks" class="w3-top w3-center w3-bar-block w3-hide hamburgerMenu w3-animate-opacity" style="background-color:f3eaf5;">
-<a href="index.html" id="currentPage" class="w3-bar-item topNavLinks">Home</a>
-<a href="games.html" class="w3-bar-item topNavLinks">Games</a>
-<a href="team.html" class="w3-bar-item topNavLinks">Teams</a>
-<a href="contact.html" class="w3-bar-item topNavLinks">Contact</a>
-</div>
 
-<!-- Navigation bar -->
-<div class="topNav w3-bar w3-top">
-<!-- Hamburger Menu -->
-<a href="javascript:void(0)" id="hamburgerMenu" class="w3-bar-item w3-right topNavButton" style="padding-top:20px;"
-    onclick="myFunction()">&#9776;</a>
-<!-- Logo -->
-<a href="index.html"><img class="logoNav w3-left w3-hide-small w3-hide-medium" src="images/logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-<a href="index.html"><img class="w3-center w3-hide-large logoNav" style="height:100px;" src="images/logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-<!-- Aligns the links to the right and hides them on a small page -->
-<div class="w3-right w3-hide-small" style="padding-top:15px;">
-    <!-- Home -->
-    <a id="currentPage" class="w3-bar-item topNavLinks" href="index.html">Home</a>
-    <!-- Team -->
-    <a class="w3-bar-item topNavLinks" href="games.html">Games</a>
-    <!-- Jobs -->
-    <a class="w3-bar-item topNavLinks" href="team.html">Team</a>
-    <!-- Contact -->
-    <a class="w3-bar-item topNavLinks" href="contact.html">Contact</a>
+<header>
+<span class="left">
+    <a class="logo" href="{{ site.base_url }}/">
+        <img alt="CSS logo" src="{{ '/images/logo/AstralForge_DarkHorizontal.svg' | relative_url }}">
+    </a>
+</span>
+<span class="right">
+    {% for item in site.menu %}
+    {% if item.children %}
+    <div class="nav dropdown">
+	<a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+    <div class="dropdown-content">
+      {% for sub in item.children %}
+      <a href="{{ sub.link }}">{{ sub.name }}</a>
+      {% endfor %}
+    </div>
+    </div>
+    {% else %}
+    <div class="nav">
+	<a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</span>
+<div class="hamburger">
+    <a id="hamburger" href="javascript:void(0)">&#9776;</a>
 </div>
+<div id="hamburger-menu" class="mobile-menu">
+    {% for item in site.menu %}
+    <div class="nav">
+	{% if item.children %}
+	<a onclick="toggleShow({{ forloop.index }})">{{ item.name }}</a>
+	<div class="dropdown" style="display: none" id="hbdd_{{ forloop.index }}">
+        <a href="{{ item.link | relative_url }}">- {{ item.name }}</a><br/>
+	  {% for sub in item.children %}
+          <a href="{{ sub.link | relative_url }}">- {{ sub.name }}</a><br/>
+	  {% endfor %}
+	</div>
+	{% else %}
+        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+	{% endif %}
+    </div>
+    {% endfor %}
 </div>
+</header>

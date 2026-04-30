@@ -1,16 +1,3 @@
-// Creating the hamburger menu
-function myFunction() {
-  var x = document.getElementById("menuLinks");
-  document.getElementById("hamburgerMenu").innerHTML = "&#9747";
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x = "X";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    document.getElementById("hamburgerMenu").innerHTML = "&#9776";
-  }
-}
-
 // Creating the quote slide show
 let slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
@@ -69,3 +56,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+  let hamburger = document.getElementById("hamburger");
+  let menu = document.getElementById("hamburger-menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("visible");
+    if(hamburger.innerHTML == "☓"){
+      hamburger.innerHTML = "&#9776";
+    }else{
+      hamburger.innerHTML = "&#9747";
+    }
+  });
+
+  menu.addEventListener("click", (event) => {
+    if (event.target == menu) {
+      menu.classList.toggle("visible");
+    }
+  });
+});
