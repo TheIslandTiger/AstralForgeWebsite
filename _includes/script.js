@@ -1,62 +1,72 @@
-// Creating the quote slide show
-let slideshows = document.querySelectorAll('[data-component="slideshow"]');
-slideshows.forEach(initSlideShow);
+document.addEventListener("DOMContentLoaded", () => {
+  let slidesEvent = document.getElementById("mySlides");
+  let dots = document.getElementById("dots");
+  let events = document.getElementsByClassName("event");
 
-function initSlideShow(slideshow) {
-	let slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+  // Convert HTMLCollection → Array
+  const arr = Array.from(events);
 
-	let index = 0, time = 5000;
-	slides[index].classList.add('active');
+  const chunks = chunkArray(arr);
+  for(i = 0; i < chunks.length; i++){
+    dots.innerHTML += "<span class='dot'></span>\n  "
+  }  
 
-	setInterval( () => {
-		slides[index].classList.remove('active');
-		
-		index++;
-		if (index === slides.length) index = 0;
+  console.log(chunks.length);
 
-		slides[index].classList.add('active');
+  document.getElementById("next").addEventListener("click", function() { 
+    plusSlides(1); 
+  }, false);
 
-	}, time);
-}
+  document.getElementById("prev").addEventListener("click", function() { 
+    plusSlides(-1); 
+  }, false);
 
-document.addEventListener("DOMContentLoaded", function () {
-  let slidesEvent = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  for(let i = 0; i < dots.children.length; i++) {
+    dots.children[i].addEventListener("click", function() {
+      currentSlide(i);
+    })
+  };
 
-  // Exit if no slideshow exists on this page
-  if (!slidesEvent.length) return;
+  let slideIndex = 0;
+  showSlides();
 
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  window.plusSlides = function (n) {
-    showSlides(slideIndex += n);
+  function plusSlides(n) {
+    slideIndex = (slideIndex + n) % chunks.length;
+    showSlides();
   }
 
-  window.currentSlide = function (n) {
-    showSlides(slideIndex = n);
+  function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
   }
 
-  function showSlides(n) {
-    let i;
+  function showSlides() {
+    for (i = 0; i < slidesEvent.children.length; i++) {
+      slidesEvent.children[i].style.display = "none";
+	  }
 
-    if (n > slidesEvent.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slidesEvent.length }
-
-    for (i = 0; i < slidesEvent.length; i++) {
-      slidesEvent[i].style.display = "none";
-	}
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < dots.children.length; i++) {
+      dots.children[i].className = dots.children[i].className.replace(" active", "");
     }
 
-    slidesEvent[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
-})
+    for(i = 0; i< chunks[slideIndex].length; i++) {
+      chunks[slideIndex][i].style.display = "block";
+    }
 
-document.addEventListener("DOMContentLoaded", () => {
+    dots.children[slideIndex].className += " active";
+  }
+
+    function chunkArray(arr) {
+    let result = [];
+    const size = 4;
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+
+    return result;
+  }
+
+  // Hamburger menu
   let hamburger = document.getElementById("hamburger");
   let menu = document.getElementById("hamburger-menu");
 

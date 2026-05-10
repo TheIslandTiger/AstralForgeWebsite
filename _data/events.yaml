@@ -1,0 +1,48 @@
+future-events:
+  - name: Be Inspired
+    date: jan - aug 2026
+    link: "https://www.linkedin.com/in/be-inspired-startups/?originalSubdomain=uk"
+    description: A Business Development Programme from the University of Staffordshire to support Astral Forge with adivce and funding.
+    image: /images/events/UOSLogoWhite.png
+past-events:
+  - name: Game Anglia Direct
+    date: 5 nov 2025
+    link: "https://www.gameanglia.co.uk/direct/"
+    description: Fate's Loop was showcased on the Game Anglia Direct stream and we had a great day networking with other developers.
+    image: /images/events/GameAngliaDirect.png
+
+  - name: EGX & MCM Comic Con
+    date: 26 oct 2025
+    link: "https://www.egx.net/global/en-gb.html"
+    description: Fate's Loop was showcased at EGX and MCM Comic Con at Excel London. A huge thanks to Game Anglia for providing a space for us at their booth.
+    image: /images/events/EGXLogo.png
+
+  - name: Ukie Student Conference
+    date: 22 oct 2025
+    link: "https://ukie.org.uk/"
+    description: Abbygale attended the Ukie Student Conference at the University of Staffordshire to co-present a panel on starting a company.
+    image: /images/events/UkieConference.jpg
+
+  - name: ProtoPlay
+    date: 19 - 20 sep 2025
+    link: "https://protoplay.co.uk/"
+    description: In Dundee, Scotland, ProtoPlay was our first public showcase to receive feedback on Fate's Loop. A great opportunity provided by Tranzfuser.
+    image: /images/events/ProtoplayTeams.jpg
+
+  - name: Develop:Brighton
+    date: 8 - 10 jul 2025
+    link: "https://www.developconference.com/"
+    description: Develop:Brighton was a great place to network and connect with people whilst also promoting ourselves and Astral Forge.
+    image: /images/events/DevelopLogo.png
+
+  - name: Tranzfuser
+    date: jun - sep 2025
+    link: "https://tranzfuser.com/"
+    description: A competitive program to provide support and funding for starting a company and developing the first project.
+    image: /images/events/TranzfuserLogo.png
+
+  - name: GradEx Degree Show
+    date: 6 jun 2025
+    link: "https://www.staffs.ac.uk/gradex"
+    description: The GradEx Degree Show at the University of Staffordshire was the first place we showcased the company alongside our projects.
+    image: /images/events/UOSLogoWhite.png
