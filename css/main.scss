@@ -16,6 +16,7 @@
   --color-line: #c7a6cf;
 
   --color-text: #000;
+  --color-text-alt: #fff;
 }
 
   /* Removing any borders */
@@ -273,6 +274,15 @@
 
   /* Home */
   /* -------------------------------------------------------------------------------------------------------- */
+
+  #protoPlay {
+    height: 300px; 
+    width: 100%;
+  }
+
+  #protoPlayDiv{
+    width: 30%;
+  }
 
   /* Creating the quote slideshow elements */
   .quoteContainer {
@@ -578,6 +588,13 @@
     border: 0;
   }
 
+  .gamesPicture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: var(--color-line) 10px solid;
+  }
+
 
   /* Footer */
   /* -------------------------------------------------------------------------------------------------------- */
@@ -611,6 +628,11 @@
     padding-top: 10px;
   }
 
+  #games-background {
+    background-color: var(--color-background-alt);
+    color: var(--color-text-alt);
+  }
+
   @media (max-width: 600px) {
 
     header .hamburger {
@@ -630,14 +652,19 @@
     }
 
     #top {
-      top:80px; 
-      left:50%; 
-      position:absolute; 
-      text-align:center; 
-      justify-content:center; 
+      top: 80px; 
+      left: 50%; 
+      position: absolute; 
+      text-align: center; 
+      justify-content: center; 
+    }
+
+    #protoPlayDiv {
+      width: 100%;
     }
 
     #protoPlay {
-      width="100%" height="200px
+      max-width: 100%;
+      height: auto;
     }
   }
