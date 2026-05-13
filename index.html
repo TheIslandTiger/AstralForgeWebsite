@@ -1,516 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Astral Forge is a video game development company with a passion for creating immersive story-driven worlds for our players to explore and enjoy!">
-  <meta name="keywords" content="Astral Forge, Video Games, AstralForge, Games, Fates Loop, Astral Forge Games, RPG, Role Playing Games, Indie Company">
-  <meta name="author" content="Astral Forge">
-  
-  <!-- Changing the web page name depending on where the user is on the page -->
-  <title>Astral Forge</title>
+---
+layout: page
+---
 
-  <!-- Adding a favicon -->
-  <link rel="icon" href="Images/Logo/Favicon.png">
-  <!-- Adding an apple touch icon -->
-  <link rel="apple-touch-icon" href="Images/Logo/Favicon.png">
-
-  <!-- Adding the css style sheets -->
-  <link href="style.css" rel="stylesheet" type="text/css">
-
-  <!-- W3.CSS stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- Jquery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Font -->
-  <link rel="stylesheet" href="https://use.typekit.net/tvy5vdd.css">
-
-</head>
-
-<body>
-  <script src="script.js"></script>
-  <main>
-
-<!-- Navigation Bar -->
-<!----------------------------------------------------------------------------- -->
-
-  <!-- Dropdown for the hamburger menu -->
-  <div id="menuLinks" class="w3-top w3-center w3-bar-block w3-hide hamburgerMenu w3-animate-opacity" style="background-color:f3eaf5;">
-    <a href="index.html" id="currentPage" class="w3-bar-item topNavLinks">Home</a>
-    <a href="games.html" class="w3-bar-item topNavLinks">Games</a>
-    <a href="team.html" class="w3-bar-item topNavLinks">Teams</a>
-    <a href="contact.html" class="w3-bar-item topNavLinks">Contact</a>
-  </div>
-
-  <!-- Navigation bar -->
-  <div class="topNav w3-bar w3-top">
-    <!-- Hamburger Menu -->
-    <a href="javascript:void(0)" id="hamburgerMenu" class="w3-bar-item w3-right topNavButton" style="padding-top:20px;"
-      onclick="myFunction()">&#9776;</a>
-    <!-- Logo -->
-    <a href="index.html"><img class="logoNav w3-left w3-hide-small w3-hide-medium" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-    <a href="index.html"><img class="w3-center w3-hide-large logoNav" style="height:100px;" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-    <!-- Aligns the links to the right and hides them on a small page -->
-    <div class="w3-right w3-hide-small" style="padding-top:15px;">
-      <!-- Home -->
-      <a id="currentPage" class="w3-bar-item topNavLinks" href="index.html">Home</a>
-      <!-- Team -->
-      <a class="w3-bar-item topNavLinks" href="games.html">Games</a>
-      <!-- Jobs -->
-      <a class="w3-bar-item topNavLinks" href="team.html">Team</a>
-      <!-- Contact -->
-      <a class="w3-bar-item topNavLinks" href="contact.html">Contact</a>
-    </div>
-  </div>
-
-<!-- Page Content -->
-<!----------------------------------------------------------------------------- -->
-  
-  <!-- Header Image -->
-  <header class="w3-display-container w3-content w3-wide pictureOutline w3-hide-small" style="max-width:100%; height:800px; overflow:hidden; padding-top:50px;">
-    <!-- Large Image -->
-    <div><img id="bottom" style="height:auto; width:100%; position:absolute;" src="Images/Logo/AstralForge_LightConstellationPattern.svg" alt="Astral Forge Light Constellation Pattern."></div>
-    <div style="position:relative; width:100%; height:100vh;">
-       <img id="top" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name" style="position:absolute; top:40%; left:50%; transform:translate(-50%, -50%); width:60%;">
-    </div>
-  </header>
-  <header class="w3-display-container w3-content w3-wide pictureOutline w3-hide-medium w3-hide-large" style="max-width:100%; height:300px; overflow:hidden; padding-top:50px;">
-    <!-- Small Image -->
-      <div><img id="bottom" style="height:auto; width:100%; position:absolute;" src="Images/Logo/AstralForge_LightConstellationPattern.svg" alt="Astral Forge Light Constellation Pattern."></div>
-      <div>><img id="top" class="w3-center" style="top:80px; left:0px; position:absolute; text-align:center; justify-content:center;" src="Images/Logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name"></div>
-  </header>
-
-  <!-- Company Moto -->
-  <h2 class="w3-center" style="font-size:35px;"><b><i>Creating immersive story-driven worlds for our players to explore and enjoy!</i></b></h2>
-
-  <!-- Company About Us Section and Image -->
-  <div class="w3-row">
-    <!-- Side Picture -->
-    <div class="w3-col w3-container w3-hide-small w3-center" style="width:30%">
-      <img class="w3-image pictureOutline" style="height:300px" src="Images/ProtoPlayTeam.JPG" alt="The Team">
-    </div>
-    <div class="w3-col w3-container w3-center w3-hide-large w3-hide-medium">
-      <img class="w3-image pictureOutline" src="Images/ProtoPlayTeam.JPG" alt="The Team" width="100%" height="200px">
-    </div>
-
-    <!-- About Us section header -->
-    <div class="w3-col w3-container w3-hide-small" style="width:70%">
-      <h1 style="font-size:30px;"><b>ABOUT US</b></h1>
-      <p style="font-size:20px;">Astral Forge is made up of a team of graduates from the University of Staffordshire and we are working to create immersive story-driven worlds for our players to explore and enjoy. We are a group of friends striving to put their mark on the games industry through our passion and dedication to the craft. Our team consists of programmers, designers, animators, artists, and more who are all experts in their area and are excited to show what they can do in a professional setting.</p>
-    </div>
-    <div class="w3-col w3-container w3-hide-large w3-hide-medium">
-      <h2 class="w3-center" style="font-size:25px;"><b>ABOUT US</b></h2>
-      <p style="font-size:15px; text-align:center;">Astral Forge is made up of a team of graduates from the University of Staffordshire and we are working to create immersive story-driven worlds for our players to explore and enjoy. We are a group of friends striving to put their mark on the games industry through our passion and dedication to the craft. Our team consists of programmers, designers, animators, artists, and more who are all experts in their area and are excited to show what they can do in a professional setting.</p>
-    </div>
-  </div>
-
-  <br>
-
-  <!-- Quote slideshow small -->
-  <div class="quoteContainerSmall w3-hide-large">
-    <h2 class="quoteContainerTitle w3-center">A Bit More:</h2>
-    <p class="item-1">Sign up to our Mailing List!<br><a class="qLinks" href="https://astralforge.beehiiv.com/subscribe" target="_blank">Click Here!</a></p>
-    <p class="item-2">The main software that we are using:     
-      <img class="qImages" src="Images/Software/UnrealLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/MayaLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/MotionBuilderLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/PhotoshopLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/BlenderLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/SubstanceLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/ViconLogo.png" alt="Link to TikTok."></p>
-    <p class="item-3">Follow us on social media!<br><a class="qLinks" href="https://beacons.ai/astralforge" target="_blank">Click Here!</a></p>  
-  </div>
-  <!-- Quote slideshow large -->
-  <div class="quoteContainerLarge w3-hide-small w3-hide-medium">
-    <h2 class="quoteContainerTitle w3-center">A Bit More:</h2>
-    <p class="item-1">Sign up to our Mailing List!<br> <a class="qLinks" href="https://astralforge.beehiiv.com/subscribe" target="_blank">Click Here!</a></p>
-    <p class="item-2">The main software that we are using:  
-      <img class="qImages" src="Images/Software/UnrealLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/MayaLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/MotionBuilderLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/PhotoshopLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/BlenderLogo.png" alt="Link to TikTok."><img class="qImages" src="Images/Software/SubstanceLogo.png" alt="Link to TikTok.">
-      <img class="qImages" src="Images/Software/ViconLogo.png" alt="Link to TikTok."></p>
-    <p class="item-3">Follow us on social media!<br><a class="qLinks" href="https://beacons.ai/astralforge" target="_blank">Click Here!</a></p>
-  </div>
-
-  <br>
-
-  <!-- Welcome To Astral Forge Section header -->
-  <h2 class="w3-center w3-hide-small" style="font-size:30px;"><b>WELCOME TO ASTRAL FORGE,</b></h2>
-  <h3 class="w3-center w3-hide-large w3-hide-medium" style="font-size:20px;"><b>WELCOME TO ASTRAL FORGE,</b></h3>
-  <p class="w3-center w3-hide-small" style="font-size:25px; margin-top:-10px;">An indie company working to create fantasy worlds for our audiences to enjoy.</p>
-  <p class="w3-center w3-hide-large w3-hide-medium" style="font-size:15px; margin-top:-10px;">An indie company working to create fantasy worlds for our audiences to enjoy.</p>
-
-  <!-- 3 section headings -->
-  <div class="w3-container w3-row">
-    <!-- Our History Header -->
-    <div class="w3-third w3-container">
-      <h2 class="w3-center w3-hide-small"><b>OUR HISTORY</b></h2>
-      <h3 class="w3-center w3-hide-large w3-hide-medium"><b>OUR HISTORY</b></h3>
-
-      <!-- Content description -->
-      <p class="w3-center w3-hide-small" style="font-size:20px;">Astral Forge has been a dream for a long time. When you are asked as a child what you want to do when you "grow up" well this was our answer.
-        We want to make video games! Games that inspire, immerse, and captivate audiences.</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">Astral Forge has been a dream for a long time. When you are asked as a child what you want to do when you "grow up" 
-        well this was our answer. We want to make video games! Games that inspire, immerse, and captivate audiences.</p>
-      
-      <p class="w3-center w3-hide-small" style="font-size:15px;">The studio was created with our players in mind. We want to allow our players to escape from reality and find worlds that truly feel like home. 
-        The sort of spaces that you would only find in the stars.</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">The studio was created with our players in mind. We want to allow our players to escape from reality and find worlds 
-        that truly feel like home. The sort of spaces that you would only find in the stars.</p>
-      <!-- Read More button -->
-      <div class="w3-center"><a class="w3-round readMoreButton" href="index.html">Read More</a></div>
-      <br class="w3-hide-large w3-hide-medium">
-    </div>
-
-    <!-- Our Mission Header -->
-    <div class="w3-third w3-container">
-      <h2 class="w3-center w3-hide-small"><b>OUR MISSION</b></h2>
-      <h3 class="w3-center w3-hide-large w3-hide-medium"><b>OUR MISSION</b></h3>
-
-      <!-- Content description -->
-      <p class="w3-center w3-hide-small" style="font-size:20px;">There is an overwhelming passion for gaming in each member of our team. It comes from what we do, the hobbies we enjoy, what we surround ourselves
-        with, the people we are accompanied by, and so much more.</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">There is an overwhelming passion for gaming in each member of our team. It comes from what we do, the hobbies we enjoy, 
-        what we surround ourselves with, the people we are accompanied by, and so much more.</p>
-      
-      <p class="w3-center w3-hide-small" style="font-size:15px;">We want to hone that passion and turn it into something that everyone can experience and enjoy. It is what makes us and the games
-        that we create so unique. As a studio, we have one mission: make the best video games we can!</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">We want to hone that passion and turn it into something that everyone can experience and enjoy. It 
-        is what makes us and the games that we create so unique. As a studio, we have one mission: make the best video games we can!</p>
-      <!-- Read More button -->
-      <div class="w3-center"><a class="w3-round readMoreButton" href="games.html">Read More</a></div>
-      <br class="w3-hide-large w3-hide-medium">
-    </div>
-
-    <!-- Meet the Team Header -->
-    <div class="w3-third w3-container">
-      <h2 class="w3-center w3-hide-small"><b>MEET THE TEAM</b></h2>
-      <h3 class="w3-center w3-hide-large w3-hide-medium"><b>MEET THE TEAM</b></h3>
-
-      <!-- Content description -->
-      <p class="w3-center w3-hide-small" style="font-size:20px;">The studio is home to some of the industry’s finest, professionals from all over the
-        country with a shared love of gaming.</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">The studio is home to some of the industry’s finest, professionals from all over the
-        UK with a shared love of gaming.</p>
-      
-      <p class="w3-center w3-hide-small" style="font-size:15px;">As a small studio, Astral Forge is place that allows every member of the team to be themselves and showcase their talent
-        and skill in the projects that we create. Every member of the team has a say over the design of the game, and you can find each person's unique influence all throughout the projects that we create.</p>
-      <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">As a small studio, Astral Forge is place that allows every member of the team to be themselves and showcase their 
-        talent and skill in the projects that we create. Every member of the team has a say over the design of the game, and you can find each person's unique influence all throughout the projects that we create.</p>
-      <!-- Read More button -->
-      <div class="w3-center"><a class="w3-round readMoreButton" href="team.html">Read More</a></div>
-      <br class="w3-hide-large w3-hide-medium">
-    </div>
-  </div>
-
-  <br><hr><br>
-  
-  <!-- Events Section header -->
-  <p class="w3-center w3-hide-small" style="font-size:20px;">The team at Astral Forge have been busy and not just with game development.</p>
-  <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">The team at Astral Forge have been busy and not just with game development.</p>
+<div class="w3-display-container w3-content w3-wide pictureOutline">
+  <!-- Large Image -->
   <div>
-    
-    <h3 class="w3-center"><b>UPCOMING EVENTS,</b></h3>
-    <br>
+    <img id="bottom" style="height:auto; width:100%; position:absolute;" src="images/logo/AstralForge_LightConstellationPattern.svg" alt="Astral Forge Light Constellation Pattern.">
+  </div>
+  <div>
+      <img id="top" class="w3-center" src="images/logo/AstralForge_DarkHorizontal.svg" alt="Astral Forge Logo and Name">
+  </div>
+</div>
 
-    <div class="w3-row w3-row-padding" style="padding-left:5%; padding-right:5%;">
-      
-      <div class="w3-col s12 m3 w3-center">
-        <a href="https://www.linkedin.com/in/be-inspired-startups/?originalSubdomain=uk" target="_blank">
-          <div class="eventSquare w3-center">
-            <div class="imageWrap">
-              <img class="w3-image eventSquareImage" src="Images/Events/UOSLogoWhite.png" alt="University of Staffordshire Logo">
+
+<!-- Company Motto -->
+<h2 class="w3-center" style="font-size:35px;"><b><i>Creating immersive story-driven worlds for our players to explore and enjoy!</i></b></h2>
+
+<!-- Company About Us Section and Image -->
+<div class="w3-row">
+  <!-- Side Picture -->
+  <div class="w3-col w3-container w3-center" id="protoPlayDiv">
+    <img class="w3-image" id="protoPlay" src="images/ProtoPlayTeam.jpg" alt="The Team">
+  </div>
+
+  <!-- About Us section header -->
+  <div id="aboutUs" class="w3-col w3-container w3-hide-small" style="width:70%">
+    <h1 style="font-size:30px;"><b>ABOUT US</b></h1>
+    <p style="font-size:20px;">Astral Forge is made up of a team of graduates from the University of Staffordshire and we are working to create immersive story-driven worlds for our players to explore and enjoy. We are a group of friends striving to put their mark on the games industry through our passion and dedication to the craft. Our team consists of programmers, designers, animators, artists, and more who are all experts in their area and are excited to show what they can do in a professional setting.</p>
+  </div>
+  <div class="w3-col w3-container w3-hide-large w3-hide-medium">
+    <h2 class="w3-center" style="font-size:25px;"><b>ABOUT US</b></h2>
+    <p style="font-size:15px; text-align:center;">Astral Forge is made up of a team of graduates from the University of Staffordshire and we are working to create immersive story-driven worlds for our players to explore and enjoy. We are a group of friends striving to put their mark on the games industry through our passion and dedication to the craft. Our team consists of programmers, designers, animators, artists, and more who are all experts in their area and are excited to show what they can do in a professional setting.</p>
+  </div>
+</div>
+
+<br>
+
+<!-- Quote slideshow -->
+<div class="quoteContainer">
+  <h2 class="quoteContainerTitle w3-center">A Bit More:</h2>
+  <p class="item-1">Sign up to our Mailing List!<br><a class="qLinks" href="https://astralforge.beehiiv.com/subscribe" target="_blank">Click Here!</a></p>
+  <p class="item-2">The main software that we are using:     
+    <img class="qImages" src="images/software/UnrealLogo.png" alt="Link to TikTok."><img class="qImages" src="images/software/MayaLogo.png" alt="Link to TikTok.">
+    <img class="qImages" src="images/software/MotionBuilderLogo.png" alt="Link to TikTok."><img class="qImages" src="images/software/PhotoshopLogo.png" alt="Link to TikTok.">
+    <img class="qImages" src="images/software/BlenderLogo.png" alt="Link to TikTok."><img class="qImages" src="images/software/SubstanceLogo.png" alt="Link to TikTok.">
+    <img class="qImages" src="images/software/ViconLogo.png" alt="Link to TikTok."></p>
+  <p class="item-3">Follow us on social media!<br><a class="qLinks" href="https://beacons.ai/astralforge" target="_blank">Click Here!</a></p>  
+</div>
+
+<br>
+
+<!-- Welcome To Astral Forge Section header -->
+<h2 class="w3-center w3-hide-small" style="font-size:30px;"><b>WELCOME TO ASTRAL FORGE,</b></h2>
+<h3 class="w3-center w3-hide-large w3-hide-medium" style="font-size:20px;"><b>WELCOME TO ASTRAL FORGE,</b></h3>
+<p class="w3-center w3-hide-small" style="font-size:25px; margin-top:-10px;">An indie company working to create fantasy worlds for our audiences to enjoy.</p>
+<p class="w3-center w3-hide-large w3-hide-medium" style="font-size:15px; margin-top:-10px;">An indie company working to create fantasy worlds for our audiences to enjoy.</p>
+
+<!-- 3 section headings -->
+<div class="w3-container w3-row">
+  <!-- Our History Header -->
+  <div class="w3-third w3-container">
+    <h2 class="w3-center w3-hide-small"><b>OUR HISTORY</b></h2>
+    <h3 class="w3-center w3-hide-large w3-hide-medium"><b>OUR HISTORY</b></h3>
+
+    <!-- Content description -->
+    <p class="w3-center w3-hide-small" style="font-size:20px;">Astral Forge has been a dream for a long time. When you are asked as a child what you want to do when you "grow up" well this was our answer.
+      We want to make video games! Games that inspire, immerse, and captivate audiences.</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">Astral Forge has been a dream for a long time. When you are asked as a child what you want to do when you "grow up" 
+      well this was our answer. We want to make video games! Games that inspire, immerse, and captivate audiences.</p>
+    
+    <p class="w3-center w3-hide-small" style="font-size:15px;">The studio was created with our players in mind. We want to allow our players to escape from reality and find worlds that truly feel like home. 
+      The sort of spaces that you would only find in the stars.</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">The studio was created with our players in mind. We want to allow our players to escape from reality and find worlds 
+      that truly feel like home. The sort of spaces that you would only find in the stars.</p>
+    <!-- Read More button -->
+    <div class="w3-center"><a class="w3-round readMoreButton" href="index.html">Read More</a></div>
+    <br class="w3-hide-large w3-hide-medium">
+  </div>
+
+  <!-- Our Mission Header -->
+  <div class="w3-third w3-container">
+    <h2 class="w3-center w3-hide-small"><b>OUR MISSION</b></h2>
+    <h3 class="w3-center w3-hide-large w3-hide-medium"><b>OUR MISSION</b></h3>
+
+    <!-- Content description -->
+    <p class="w3-center w3-hide-small" style="font-size:20px;">There is an overwhelming passion for gaming in each member of our team. It comes from what we do, the hobbies we enjoy, what we surround ourselves
+      with, the people we are accompanied by, and so much more.</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">There is an overwhelming passion for gaming in each member of our team. It comes from what we do, the hobbies we enjoy, 
+      what we surround ourselves with, the people we are accompanied by, and so much more.</p>
+    
+    <p class="w3-center w3-hide-small" style="font-size:15px;">We want to hone that passion and turn it into something that everyone can experience and enjoy. It is what makes us and the games
+      that we create so unique. As a studio, we have one mission: make the best video games we can!</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">We want to hone that passion and turn it into something that everyone can experience and enjoy. It 
+      is what makes us and the games that we create so unique. As a studio, we have one mission: make the best video games we can!</p>
+    <!-- Read More button -->
+    <div class="w3-center"><a class="w3-round readMoreButton" href="games.html">Read More</a></div>
+    <br class="w3-hide-large w3-hide-medium">
+  </div>
+
+  <!-- Meet the Team Header -->
+  <div class="w3-third w3-container">
+    <h2 class="w3-center w3-hide-small"><b>MEET THE TEAM</b></h2>
+    <h3 class="w3-center w3-hide-large w3-hide-medium"><b>MEET THE TEAM</b></h3>
+
+    <!-- Content description -->
+    <p class="w3-center w3-hide-small" style="font-size:20px;">The studio is home to some of the industry’s finest, professionals from all over the
+      country with a shared love of gaming.</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">The studio is home to some of the industry’s finest, professionals from all over the
+      UK with a shared love of gaming.</p>
+    
+    <p class="w3-center w3-hide-small" style="font-size:15px;">As a small studio, Astral Forge is place that allows every member of the team to be themselves and showcase their talent
+      and skill in the projects that we create. Every member of the team has a say over the design of the game, and you can find each person's unique influence all throughout the projects that we create.</p>
+    <p class="w3-center w3-hide-medium w3-hide-large" style="font-size:10px; text-align:center;">As a small studio, Astral Forge is place that allows every member of the team to be themselves and showcase their 
+      talent and skill in the projects that we create. Every member of the team has a say over the design of the game, and you can find each person's unique influence all throughout the projects that we create.</p>
+    <!-- Read More button -->
+    <div class="w3-center"><a class="w3-round readMoreButton" href="team.html">Read More</a></div>
+    <br class="w3-hide-large w3-hide-medium">
+  </div>
+</div>
+
+<br><hr><br>
+
+{% assign events = site.data['events'] %}
+
+<!-- Events Section header -->
+<p class="w3-center w3-hide-small" style="font-size:20px;">The team at Astral Forge have been busy and not just with game development.</p>
+<p class="w3-center w3-hide-medium w3-hide-large" style="font-size:15px; text-align:center;">The team at Astral Forge have been busy and not just with game development.</p>
+<div>
+  
+  <h3 class="w3-center"><b>UPCOMING EVENTS,</b></h3>
+  <br>
+
+  <div class="w3-row w3-row-padding" style="padding-left:5%; padding-right:5%;">
+    
+    {% for event in events.future-events %}
+
+    <div class="w3-col s12 m3 w3-center">
+      <a href="{{ event.link }}" target="_blank">
+        <div class="eventSquare w3-center">
+          <div class="imageWrap">
+            <img class="w3-image eventSquareImage" src="{{ event.image }}" alt="University of Staffordshire Logo">
+          </div>
+          <h3 style="padding-top:2px;">{{ event.name }}</h3>
+          <div class="w3-row">
+            <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
+              {% assign date = event.date | split: " " %}
+              {% assign has_number = false %}
+              {% for i in (0..9) %}
+                {% if date[0] contains i %}
+                  {% assign has_number = true %}
+                {% endif %}
+              {% endfor %}
+
+              {% if has_number %}
+                {% if date[1] contains "-" %}
+                  <p><b>{{ date[0] }} - {{ date[2] }}</b></p>
+                  <p>{{ date[3] | upcase }}</p>
+                  <p>{{date[4]}}</p>
+                {% elsif date[2] contains "-" %}
+                  <p><b>{{ date[0] }}</b> {{ date[1] | upcase }} -</p>
+                  <p><b>{{ date[3] }}</b> {{ date[4] | upcase }} -</p>
+                  <p>{{ date[5] }}</p>
+                {% else %}
+                  <p><b>{{ date[0] }}</b></p>
+                  <p>{{ date[1] | upcase }}</p>
+                  <p>{{ date[2] }}</p>
+                {% endif %}
+              {% else %}
+                <p>{{ date[0] | upcase }} -</p>
+                <p>{{ date[2] | upcase }}</p>
+                <p>{{ date[3] }}</p>
+              {% endif %}
             </div>
-            <h3 style="padding-top:2px;">Be Inspired</h3>
-            <div class="w3-row">
-              <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                <p>JAN -</p>
-                <p>AUG</p>
-                <p>2026</p>
-              </div>
-              <div class="w3-col w3-container" style="width:70%">
-                <p style="color:#bdbdbd;">A Business Development Programme from the University of Staffordshire to support Astral Forge with adivce and funding.</p>
-              </div>
+            <div class="w3-col w3-container" style="width:70%">
+              <p style="color:#bdbdbd;">{{ event.description }}</p>
             </div>
           </div>
-        </a>
-      </div>
-
-      <div class="w3-col s12 m3 w3-center">
-      </div>
-        
-      <div class="w3-col s12 m3 w3-center">
-      </div>
-
-      <div class="w3-col s12 m3 w3-center">
-        <div class="imageWrap">
         </div>
-        <p>Check back for more upcoming events...</p>
-      </div>
-      
+      </a>
     </div>
+
+    {% endfor %}
+
+    <div class="w3-col s12 m3 w3-center">
+      <div class="imageWrap">
+      </div>
+      <p>Check back for more upcoming events...</p>
+    </div>
+    
   </div>
+</div>
+
+<div>
   
-  <div>
-    
-    <br>
-    <h3 class="w3-center"><b>PREVIOUS EVENTS,</b></h3>
-    <br>
+  <br>
+  <h3 class="w3-center"><b>PREVIOUS EVENTS,</b></h3>
+  <br>
 
-    <!-- <div class="w3-row w3-row-padding" style="padding-left:5%; padding-right:5%;"> -->
-    <div class="w3-row w3-row-padding">
+    <div id=mySlides class="fade w3 row w3-row-padding">
+        {% for event in events.past-events %}
+        <div class="event w3-col s12 m3 w3-center">
+          <a href="{{ event.link }}" target="_blank">
+            <div class="eventSquare w3-center">
+              <div class="imageWrap">
+                <img class="w3-image eventSquareImage" src="{{ event.image }}" alt="Game Anglia Direct Logo">
+              </div>
+              <h3 style="padding-top:2px;">{{ event.name }}</h3>
+              <div class="w3-row">
+                <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
+                  {% assign date = event.date | split: " " %}
+                  {% assign has_number = false %}
+                  {% for i in (0..9) %}
+                    {% if date[0] contains i %}
+                      {% assign has_number = true %}
+                    {% endif %}
+                  {% endfor %}
 
-      <div class="mySlides fade">
-        <div class="w3-row w3-row-padding">
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://www.gameanglia.co.uk/direct/" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/GameAngliaDirect.png" alt="Game Anglia Direct Logo">
+                  {% if has_number %}
+                    {% if date[1] contains "-" %}
+                      <p><b>{{ date[0] }} - {{ date[2] }}</b></p>
+                      <p>{{ date[3] | upcase }}</p>
+                      <p>{{date[4]}}</p>
+                    {% elsif date[2] contains "-" %}
+                      <p><b>{{ date[0] }}</b> {{ date[1] | upcase }} -</p>
+                      <p><b>{{ date[3] }}</b> {{ date[4] | upcase }} -</p>
+                      <p>{{ date[5] }}</p>
+                    {% else %}
+                      <p><b>{{ date[0] }}</b></p>
+                      <p>{{ date[1] | upcase }}</p>
+                      <p>{{ date[2] }}</p>
+                    {% endif %}
+                  {% else %}
+                    <p>{{ date[0] | upcase }} -</p>
+                    <p>{{ date[2] | upcase }}</p>
+                    <p>{{ date[3] }}</p>
+                  {% endif %}
                 </div>
-                <h3 style="padding-top:2px;">Game Anglia Direct</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>5</b></p>
-                    <p>NOV</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">Fate's Loop was showcased on the Game Anglia Direct stream and we had a great day networking with other developers.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-    
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://www.egx.net/global/en-gb.html" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/EGXLogo.png" alt="EGX Logo">
-                </div>
-                <h3 style="padding-top:2px;">EGX & MCM Comic Con</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>26</b></p>
-                    <p>OCT</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">Fate's Loop was showcased at EGX and MCM Comic Con at Excel London. A huge thanks to Game Anglia for providing a space for us at their booth.</p>
-                  </div>
+                <div class="w3-col w3-container" style="width:70%">
+                  <p style="color:#bdbdbd;">{{ event.description }}</p>
                 </div>
               </div>
-            </a>
-          </div>
-          
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://ukie.org.uk/" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/UkieConference.jpg" alt="Abbygale presenting at the Ukie Conference">
-                </div>
-                <h3 style="padding-top:2px;">Ukie Student Conference</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>22</b></p>
-                    <p>OCT</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">Abbygale attended the Ukie Student Conference at the University of Staffordshire to co-present a panel on starting a company.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-     
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://protoplay.co.uk/" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/ProtoplayTeams.jpg" alt="Tranzfuser Teams at Protoplay">
-                </div>
-                <h3 style="padding-top:2px;">ProtoPlay</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>19 - 20</b></p>
-                    <p>SEP</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">In Dundee, Scotland, ProtoPlay was our first public showcase to receive feedback on Fate's Loop. A great opportunity provided by Tranzfuser.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div> 
+            </div>
+          </a>
         </div>
-      </div>
-        
-      <div class="mySlides fade">
-        <div class="w3-row w3-row-padding">
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://www.developconference.com/" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/DevelopLogo.png" alt="Develop:Brighton Logo">
-                </div>
-                <h3 style="padding-top:2px;">Develop:Brighton</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>8 - 10</b></p>
-                    <p>JUL</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">Develop:Brighton was a great place to network and connect with people whilst also promoting ourselves and Astral Forge.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-      
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://tranzfuser.com/" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/TranzfuserLogo.png" alt="Tranzfuser Logo">
-                </div>
-                <h3 style="padding-top:2px;">Tranzfuser</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p>JUN -</p>
-                    <p>SEP</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">A competitive program to provide support and funding for starting a company and developing the first project.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-    
-          <div class="w3-col s12 m3 w3-center">
-            <a href="https://www.staffs.ac.uk/gradex" target="_blank">
-              <div class="eventSquare w3-center">
-                <div class="imageWrap">
-                  <img class="w3-image eventSquareImage" src="Images/Events/UOSLogoWhite.png" alt="University of Staffordshire Logo">
-                </div>
-                <h3 style="padding-top:2px;">GradEx Degree Show</h3>
-                <div class="w3-row">
-                  <div class="w3-col w3-container eventSquareSmall w3-center" style="width:30%">
-                    <p><b>6</b></p>
-                    <p>JUN</p>
-                    <p>2025</p>
-                  </div>
-                  <div class="w3-col w3-container" style="width:70%">
-                    <p style="color:#bdbdbd;">The GradEx Degree Show at the University of Staffordshire was the first place we showcased the company alongside our projects.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
 
+        {% endfor %}
+  
+      </div>
     </div>
+  
 
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-  </div>
 
   <br>
-    
-  </main>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <a id="prev">&#10094;</a>
+    <div id="dots" style=""></div>
+    <a id="next">&#10095;</a>
+  </div>
+</div>
 
-<!-- Footer -->
-<!----------------------------------------------------------------------------- -->
+<br>
 
-  <!-- Footer -->
-  <footer class="footerLarge w3-hide-small" style="display:block;"> 
-    <!-- Making space for a logo -->
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third"></div>
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Logo -->
-        <a href="index.html"><img class="logoFooter" src="Images/Logo/AstralForge_LightHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-      </div>
-      <div class="w3-col w3-container w3-third"></div>
-    </div>
-
-    <div class="w3-row">
-      <!-- Adding the rest of the footer details -->
-      <div class="w3-col w3-container w3-third">
-        <!-- Contact -->
-        <h2 class="w3-center headingFooter"><b>CONTACT</b></h2>
-        <a href="contact.html"><p class="w3-center" style="color:white; font-size:20px;">Make an inquiry</p></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Social -->
-        <h2 class="headingFooter"><b>SOCIALS</b></h2>
-        <!-- Large screens -->
-        <a href="https://www.instagram.com/astralforgeofficial/" target="_blank"><img class="socialFooterLarge" src="Images/Software/InstagramLogo.png" alt="Link to Instagram."></a>
-        <a href="https://bsky.app/profile/astral-forge.bsky.social" target="_blank" style="padding-left:5px; padding-right:5px;"><img class="socialFooterLarge" src="Images/Software/Bluesky Logo.png" alt="Link to BlueSky."></a>
-        <a href="https://www.tiktok.com/@astralforgeofficial" target="_blank"><img class="socialFooterLarge" src="Images/Software/TikTokLogo.png" alt="Link to TikTok."></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third">
-        <!-- Legal -->
-        <h2 class="w3-center headingFooter"><b>LEGAL</b></h2>
-        <p class="w3-center" style="color:white; font-size:20px;">Coming Soon</p>
-      </div>
-    </div>
-
-    <p style="padding-left:10px; color:#cdcdcd; font-size:15px;">© 2025 Astral Forge. All rights reserved.</p>
-  </footer>
-
-  <!-- Footer -->
-  <footer class="footerSmall w3-hide-large w3-hide-medium" style="display:block;"> 
-    <!-- Making space for a logo -->
-    <div class="w3-row">
-      <div class="w3-col w3-container w3-third"></div>
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Logo -->
-        <a href="index.html"><img class="logoFooter" src="Images/Logo/AstralForge_LightHorizontal.svg" alt="Astral Forge Logo and Name."></a>
-      </div>
-      <div class="w3-col w3-container w3-third"></div>
-    </div>
-
-    <div class="w3-row">
-      <!-- Adding the rest of the footer details -->
-      <div class="w3-col w3-container w3-third">
-        <!-- Contact -->
-        <h2 class="w3-center headingFooter"><b>CONTACT</b></h2>
-        <a href="contact.html"><p class="w3-center" style="color:white; font-size:20px;">Make an inquiry</p></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third w3-center">
-        <!-- Social -->
-        <h2 class="headingFooter"><b>SOCIALS</b></h2>
-        <!-- Large screens -->
-        <a href="https://www.instagram.com/astralforgeofficial/" target="_blank"><img class="socialFooterLarge" src="Images/Software/InstagramLogo.png" alt="Link to Instagram."></a>
-        <a href="https://bsky.app/profile/astral-forge.bsky.social" target="_blank" style="padding:5px;"><img class="socialFooterLarge" src="Images/Software/Bluesky Logo.png" alt="Link to BlueSky."></a>
-        <a href="https://www.tiktok.com/@astralforgeofficial" target="_blank"><img class="socialFooterLarge" src="Images/Software/TikTokLogo.png" alt="Link to TikTok."></a>
-      </div>
-      
-      <div class="w3-col w3-container w3-third">
-        <!-- Legal -->
-        <h2 class="w3-center headingFooter"><b>LEGAL</b></h2>
-        <p class="w3-center" style="color:white; font-size:20px;">Coming Soon</p>
-      </div>
-    </div>
-
-    <p class="w3-center" style="padding-left:10px; color:#cdcdcd; font-size:15px;">© 2025 Astral Forge. All rights reserved.</p>
-  </footer>
-
-</body>
-
-</html>
+<script>
+  {% include slides.js %}
+  {% include hamburger.js %}
+</script>

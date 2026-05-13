@@ -1,0 +1,46 @@
+
+<header>
+<span class="left">
+    <a class="logo" href="{{ site.base_url }}/">
+        <img alt="CSS logo" src="{{ '/images/logo/AstralForge_DarkHorizontal.svg' | relative_url }}">
+    </a>
+</span>
+<span class="right">
+    {% for item in site.menu %}
+    {% if item.children %}
+    <div class="nav dropdown">
+	<a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+    <div class="dropdown-content">
+      {% for sub in item.children %}
+      <a href="{{ sub.link }}">{{ sub.name }}</a>
+      {% endfor %}
+    </div>
+    </div>
+    {% else %}
+    <div class="nav">
+	<a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</span>
+<div class="hamburger">
+    <a id="hamburger" href="javascript:void(0)">&#9776;</a>
+</div>
+<div id="hamburger-menu" class="mobile-menu">
+    {% for item in site.menu %}
+    <div class="nav">
+	{% if item.children %}
+	<a onclick="toggleShow({{ forloop.index }})">{{ item.name }}</a>
+	<div class="dropdown" style="display: none" id="hbdd_{{ forloop.index }}">
+        <a href="{{ item.link | relative_url }}">- {{ item.name }}</a><br/>
+	  {% for sub in item.children %}
+          <a href="{{ sub.link | relative_url }}">- {{ sub.name }}</a><br/>
+	  {% endfor %}
+	</div>
+	{% else %}
+        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+	{% endif %}
+    </div>
+    {% endfor %}
+</div>
+</header>
