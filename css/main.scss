@@ -378,6 +378,11 @@
     border: 3px solid #c7a6cf;
   }
 
+  .event {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
   .eventSquare{
     color: white;
     border-radius: 15px; /* one value */
@@ -601,7 +606,7 @@
 
   /* Creating the footer design elements */
 
-  .footerSmall {
+  .footer {
     background-color: black;
     height: 400px;
     width: 100%;
@@ -641,6 +646,10 @@
 
     header .right {
       display: none;
+    }
+
+    .footer {
+      height: 600px;;
     }
 
     .quoteContainer {
