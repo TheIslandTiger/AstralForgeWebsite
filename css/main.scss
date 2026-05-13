@@ -573,7 +573,10 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
-    width: 74%;
+
+    width: 90%;
+    max-width: 1400px;
+
     margin: 0 auto;
     align-items: start;
   }
@@ -756,6 +759,7 @@
     .twoColumnLayout {
       grid-template-columns: 1fr;
       width: 90%;
+      gap: 30px;
     }
   }
 
