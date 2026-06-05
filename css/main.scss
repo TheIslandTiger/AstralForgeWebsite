@@ -607,16 +607,19 @@
   /* Team */
   /* -------------------------------------------------------------------------------------------------------- */
   .team-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 2%;
-  width: 100%;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .team-card {
-    width: 32%;
+    width: 50%;
     box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: stretch; 
   }
 
   .highlight-box,
@@ -630,11 +633,13 @@
 
   .highlight-box {
     background-color: #c7a6cf;
+    margin-left: 10px;
   }
 
   .highlight-box2 {
     background-color: #f3eaf5;
     margin-top: 10px;
+    margin-right: 10px;
   }
 
   .teamImage {
@@ -643,6 +648,7 @@
     height: auto;
     border: 2px solid black;
   }
+
 
   .middleImage {
     width: 100%;
@@ -750,6 +756,15 @@
     .team-card {
       width: 100%;
       margin-bottom: 30px;
+      display: inline-block;
+      gap: 20px;
+      align-items: normal; 
+    }
+
+    .highlight-box,
+    .highlight-box2 {
+      margin-right: 10px;
+      width: 95%;
     }
 
     .middle-card {
