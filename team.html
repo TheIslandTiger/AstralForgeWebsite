@@ -7,9 +7,10 @@ styles:
 <!-- Page title -->
 <h1 style="padding-top:20px; padding-bottom:20px; text-align: center;"><b>OUR TEAM</b></h1>
 
-{% assign team = site.data['team'] %}
-{% for person in team %}
 <div class="person-container">
+
+  {% assign team = site.data['team'] %}
+  {% for person in team %}
   <div class="person">
     <img class="picture" src=" {{person.image | relative_url }}" alt="Picture of {{ person.name }}">
 
@@ -24,22 +25,23 @@ styles:
       </p>
 
       <div class="social-row">
-        <a class="teamFollowLink" href="{{ person.linkedin }}" target="_blank">
+        <a class="teamFollowLink" >
 
           <span class="teamFollow">Follow on:</span>
 
-          <img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo">
+          <a href="{{ person.linkedin }} "><img class="socialLink" src="images/software/LinkedInLogo.png" alt="LinkedIn logo"></a>
           {% if person.artstation %}
-          <img class="socialLink" src="images/software/Artstation.svg" alt="Artstation Logo">
+          <a href="{{ person.artstation }} "><img class="socialLink" src="images/software/Artstation.svg" alt="Artstation Logo"></a>
           {% endif %}
         </a>
       </div>
     </div>
 
   </div>
+
+  {% endfor %}
 </div>
 
-{% endfor %}
 
 <br>
 
