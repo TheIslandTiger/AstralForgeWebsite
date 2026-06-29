@@ -4,6 +4,12 @@ future-events:
     link: "https://www.linkedin.com/in/be-inspired-startups/?originalSubdomain=uk"
     description: A Business Development Programme from the University of Staffordshire to support Astral Forge with adivce and funding.
     image: /images/events/UOSLogoWhite.png
+
+  - name: Rapture Gaming Festival
+    date: 1 aug - 2 aug 2026
+    link: "https://rapturegamingfestival.com/colchester/"
+    description: A gaming festival located in Colchester where Fate's Loop will be shown to public audiences.
+    image: /images/events/RaptureLogo.jpg
 past-events:
   - name: Game Anglia Direct
     date: 5 nov 2025
