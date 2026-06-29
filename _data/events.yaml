@@ -6,7 +6,7 @@ future-events:
     image: /images/events/UOSLogoWhite.png
 
   - name: Rapture Gaming Festival
-    date: 1 aug - 2 aug 2026
+    date: 1 - 2 aug 2026
     link: "https://rapturegamingfestival.com/colchester/"
     description: A gaming festival located in Colchester where Fate's Loop will be shown to public audiences.
     image: /images/events/RaptureLogo.jpg
