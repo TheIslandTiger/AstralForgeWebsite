@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let slidesEvent = document.getElementById("mySlides");
   let dots = document.getElementById("dots");
-  let events = document.getElementsByClassName("event");
+  let events = document.getElementsByClassName("past-event");
 
   // Convert HTMLCollection → Array
   const arr = Array.from(events);
@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   for(i = 0; i < chunks.length; i++){
     dots.innerHTML += "<span class='dot'></span>\n  "
   }  
-
-  console.log(chunks.length);
 
   document.getElementById("next").addEventListener("click", function() { 
     plusSlides(1); 

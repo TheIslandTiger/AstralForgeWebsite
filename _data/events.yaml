@@ -10,6 +10,7 @@ future-events:
     link: "https://rapturegamingfestival.com/colchester/"
     description: A gaming festival located in Colchester where Fate's Loop will be shown to public audiences.
     image: /images/events/RaptureLogo.jpg
+
 past-events:
   - name: Game Anglia Direct
     date: 5 nov 2025
