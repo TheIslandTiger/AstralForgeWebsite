@@ -6,13 +6,6 @@ future-events:
     image: /images/events/UOSLogoWhite.png
     alt-text: University of Staffordshire Logo
 
-  - name: Rapture Gaming Festival
-    date: 1 - 2 aug 2026
-    link: "https://rapturegamingfestival.com/colchester/"
-    description: A gaming festival located in Colchester where Fate's Loop will be shown to public audiences.
-    image: /images/events/RaptureLogo.jpg
-    alt-text: Rapture Gaming Festival Logo
-
 past-events:
   - name: Game Anglia Direct
     date: 5 nov 2025
@@ -62,3 +55,10 @@ past-events:
     description: The GradEx Degree Show at the University of Staffordshire was the first place we showcased the company alongside our projects.
     image: /images/events/UOSLogoWhite.png
     alt-text: University of Staffordshire Logo
+
+  - name: Rapture Gaming Festival
+    date: 1 - 2 aug 2026
+    link: "https://rapturegamingfestival.com/colchester/"
+    description: A gaming festival located in Colchester where Fate's Loop will be shown to public audiences.
+    image: /images/events/RaptureLogo.jpg
+    alt-text: Rapture Gaming Festival Logo
